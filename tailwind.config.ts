@@ -1,6 +1,4 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+const config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,13 +7,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        soft1: '#987F6A',
-        primary: '#382020',
-        secondary: '#3C2222',
-        mediumLight: '#CEBCB0',
-        regularLight: '#343E46',
-        ultralight: '#FAF8F7',
-        wht: '#2A372F',
+        "primary": "#F1F2F4",
+        "secondary": "#323c3d",
+        "secondary-light": "#5C635E",
+        "third": "#FAAF1D"
       },
     },
   },
