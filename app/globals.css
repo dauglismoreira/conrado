@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 ::-moz-selection { /* Code for Firefox */
-  color: #CEBCB0;
-  background: #382020;
+  color: #FAAF1D;
+  background: #323c3d;
 }
 
 ::selection {
-  color: #CEBCB0;
-  background: #382020;
+  color: #FAAF1D;
+  background: #323c3d;
 }
 
 html {
@@ -26,6 +26,6 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #987F6A;
+  background-color: #FAAF1D;
   outline: none;
 }
