@@ -1,0 +1,5 @@
+.btn-primary {
+    @apply
+    p-4 text-soft1 bg-primary
+    lg:p-20
+}
