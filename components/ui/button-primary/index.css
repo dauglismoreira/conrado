@@ -1,5 +1,7 @@
 .btn-primary {
     @apply
-    p-4 text-secondary bg-primary text-4xl
-    lg:p-20
+    text-third
+    border-solid
+    border
+    p-2.5
 }

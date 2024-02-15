@@ -1,0 +1,22 @@
+.blog-card {
+    @apply
+    w-[282px]
+}
+
+.blog-card img{
+    @apply
+    mb-[20px]
+}
+
+.blog-card h3 {
+    @apply
+    text-[14px]
+    text-secondary-light
+    font-semibold
+    mb-[10px]
+}
+
+.blog-card h1 {
+    @apply
+    mb-[40px]
+}

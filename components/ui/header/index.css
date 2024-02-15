@@ -1,0 +1,46 @@
+.header {
+    @apply
+    h-16
+    w-full
+    bg-secondary
+    items-center
+    flex
+    justify-center
+    p-2
+}
+
+.header .container {
+    @apply
+    w-full
+    max-w-screen-xl
+    flex
+    justify-between
+    h-full
+}
+
+.header .container .ul {
+    @apply
+    items-center
+    flex
+    text-center
+    h-full
+    gap-5
+}
+
+.header .container .ul li a {
+    @apply
+    text-primary
+    items-center
+    text-center
+}
+
+.header .container .action-header {
+    @apply
+    flex
+    text-center
+}
+
+.header .container .action-header button:last-child{
+    @apply
+    ml-5
+}

@@ -6,13 +6,13 @@ export default function RootLayout({children}: Readonly<{ children: ReactNode }>
   return (
     <html lang="pt-BR">
     <body className={quinn.className}>
-    <header></header>
+      <header></header>
 
-    {children}
+      {children}
 
-    <footer>
+      <footer>
 
-    </footer>
+      </footer>
     </body>
     </html>
   );

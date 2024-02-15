@@ -1,0 +1,15 @@
+.social-link {
+    @apply
+    w-[39px]
+    h-[39px]
+    border-third
+    border
+    flex
+    rounded-full
+    p-[5px]
+}
+
+.social-link img{
+    @apply
+    w-[30px]
+}

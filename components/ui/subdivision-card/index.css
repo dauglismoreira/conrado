@@ -1,0 +1,50 @@
+.subdivision-card {
+    @apply
+    flex
+    flex-col
+}
+
+.subdivision-card .container {
+    @apply
+    border-[#CDCDCD]
+    border
+    p-[10px]
+    mt-[-1px]
+}
+
+.subdivision-card .container h3 {
+    @apply
+    text-[14px]
+    font-semibold
+    text-secondary-light
+    mb-[6px]
+}
+
+.subdivision-card .container h1 {
+    @apply
+    text-[22px]
+    text-secondary-light
+    mb-[10px]
+}
+
+.subdivision-card .container p {
+    @apply
+    text-[14px]
+    flex
+    align-middle
+    text-secondary-light
+    text-center
+    mb-[20px]
+}
+
+.subdivision-card .container p img {
+    @apply
+    w-[18px]
+    mr-[10px]
+    mb-0
+}
+
+.subdivision-card .container button {
+    @apply
+    w-max
+}
