@@ -12,8 +12,8 @@ export default function Fourth(){
             <TitleSection title="Veja Também" subtitle="Conheça os edificios alto padrão da Conrado." />
             <div className="wrapper">
                 {
-                    recommended.map((item: any) => (
-                        <BuildingCard image={imageTest} city="PORTO BELO" address="Porto Belo - Santa Catarina" title="Palazzo Reale" link="" rooms="2 ou 3 suítes" parks="2 vagas" size="90 a 125 m²" btn="CONHEÇA"/>
+                    recommended.map((item: any, i: number) => (
+                        <BuildingCard key={`building-${i}`} image={imageTest} city="PORTO BELO" address="Porto Belo - Santa Catarina" title="Palazzo Reale" link="" rooms="2 ou 3 suítes" parks="2 vagas" size="90 a 125 m²" btn="CONHEÇA"/>
                     ))
                 }
             </div>

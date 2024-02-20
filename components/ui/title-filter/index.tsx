@@ -13,16 +13,16 @@ export default function TitleFilter({title}: TitleFilter){
         <div className="wrapper">
             <h1>{title}</h1>
             <div className="filters">
-                <select name="#" id="#" key="select-1">
-                    <option value="#" selected>ESTÁGIO DA OBRA</option>
+                <select name="#" id="#" key="select-1" defaultValue='#'>
+                    <option value="#">ESTÁGIO DA OBRA</option>
                     <option value="LANÇAMENTO">LANÇAMENTO</option>
                 </select>
-                <select name="#" id="#" key="select-2">
-                    <option value="#" selected>CIDADE</option>
+                <select name="#" id="#" key="select-2" defaultValue='#'>
+                    <option value="#">CIDADE</option>
                     <option value="BALNEÁRIO CAMBORIÚ">BALNEÁRIO CAMBORIÚ</option>
                 </select>
-                <select name="#" id="#" key="select-3">
-                    <option value="#" selected>ESTADO</option>
+                <select name="#" id="#" key="select-3" defaultValue='#'>
+                    <option value="#">ESTADO</option>
                     <option value="SANTA CATARINA">SANTA CATARINA</option>
                 </select>
             </div>

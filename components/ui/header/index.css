@@ -21,6 +21,11 @@
     h-full
 }
 
+.header .container img {
+    @apply
+    cursor-pointer
+}
+
 .header .container .ul {
     @apply
     items-center

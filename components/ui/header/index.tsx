@@ -12,13 +12,13 @@ export default function Header(){
 
     return <header className="header">
         <div className="container">
-            <Image src={logo} alt="Conrado Logo"/>
+            <Image src={logo} alt="Conrado Logo" onClick={() => window.location.href = '/'}/>
             <ul className="ul">
-                <li><a href="#">Edifícios</a></li>
-                <li><a href="#">Loteamentos</a></li>
-                <li><a href="#">Excluisivos</a></li>
-                <li><a href="#">A Conrado</a></li>
-                <li><a href="#">Notícias</a></li>
+                <li><a href="/lista-empreendimentos">Edifícios</a></li>
+                <li><a href="/lista-loteamentos">Loteamentos</a></li>
+                <li><a href="/lista-exclusivos">Excluisivos</a></li>
+                <li><a href="/sobre">A Conrado</a></li>
+                <li><a href="/noticias">Notícias</a></li>
             </ul>
             <div className="action-header">
                 <ButtonPrimary text="FALE COM A CONRADO" onClick={() => alert("click")} classStyle="#FAAF1D" />
