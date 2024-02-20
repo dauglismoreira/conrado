@@ -1,22 +1,36 @@
 .blog-card {
     @apply
     w-[282px]
+    h-[399px]
+    flex
+    flex-col
+    justify-between
 }
 
 .blog-card img{
     @apply
-    mb-[20px]
+    mb-5
+    w-full
+    cursor-pointer
 }
 
-.blog-card h3 {
+.blog-card .wrapper {
     @apply
-    text-[14px]
+    flex
+    flex-col
+    justify-between
+    h-full
+}
+
+.blog-card .wrapper .content h3 {
+    @apply
+    text-sm
     text-secondary-light
     font-semibold
-    mb-[10px]
+    mb-3
 }
 
-.blog-card h1 {
+.blog-card .wrapper button {
     @apply
-    mb-[40px]
+    max-w-max
 }

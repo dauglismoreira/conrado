@@ -1,0 +1,15 @@
+.subdivision {
+    @apply
+    border-b
+    border-gray
+    w-full
+    pb-20
+}
+
+.subdivision .wrapper {
+    @apply
+    mt-10
+    flex
+    w-full
+    gap-3
+}

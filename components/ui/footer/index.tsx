@@ -41,8 +41,8 @@ export default function Footer(){
                 <div className="actions">
                     <div className="addresses">
                         {
-                            addresses.map((item: Address) => (
-                                <div className="address">
+                            addresses.map((item: Address, i: number) => (
+                                <div className="address" key={`address-${i}`}>
                                     <h3>{item.city}</h3>
                                     <p>{item.phone}</p>
                                 </div>

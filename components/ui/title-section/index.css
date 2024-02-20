@@ -1,0 +1,19 @@
+.title-section {
+    @apply
+    flex
+    flex-col
+    gap-3
+    text-center
+    p-2.5
+}
+
+.title-section h1{
+    @apply
+    text-lg
+}
+
+.title-section h3{
+    @apply
+    text-base
+    text-secondary-light
+}

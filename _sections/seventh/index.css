@@ -1,0 +1,29 @@
+.history {
+    @apply
+    border-b
+    border-gray
+    w-full
+    pb-20
+    pl-40
+    pr-40
+    justify-center
+    flex
+    flex-col
+    items-center
+}
+
+.history .history-title {
+    @apply
+    pt-10
+    pb-10
+    w-full
+    text-6xl
+    text-center
+    max-w-3xl
+    text-secondary
+}
+
+.history img {
+    @apply
+    mb-12
+}

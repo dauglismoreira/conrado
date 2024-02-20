@@ -1,0 +1,45 @@
+.cover {
+    @apply
+    w-full
+    h-[745px]
+    bg-no-repeat
+    bg-top
+    bg-contain
+    relative
+}
+
+.cover .title {
+    @apply
+    absolute
+    left-56
+    top-44
+}
+
+.cover .title h1,
+.cover .title h3 {
+    @apply
+    mb-14
+    text-primary
+}
+
+.cover .title h3 {
+    @apply
+    text-xs
+}
+
+.cover .title h1 {
+    @apply
+    text-4xl
+    max-w-72
+}
+
+.cover .cover-degree {
+    @apply
+    absolute
+    left-0
+    top-0
+    w-full
+    h-[745px]
+    bg-black
+    opacity-20
+}

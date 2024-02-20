@@ -8,39 +8,39 @@
     @apply
     border-[#CDCDCD]
     border
-    p-[10px]
+    p-3
     mt-[-1px]
 }
 
 .subdivision-card .container h3 {
     @apply
-    text-[14px]
+    text-sm
     font-semibold
     text-secondary-light
-    mb-[6px]
+    mb-2
 }
 
 .subdivision-card .container h1 {
     @apply
-    text-[22px]
+    text-xl
     text-secondary-light
-    mb-[10px]
+    mb-3
 }
 
 .subdivision-card .container p {
     @apply
-    text-[14px]
+    text-xs
     flex
     align-middle
     text-secondary-light
     text-center
-    mb-[20px]
+    mb-5
 }
 
 .subdivision-card .container p img {
     @apply
-    w-[18px]
-    mr-[10px]
+    w-5
+    mr-3
     mb-0
 }
 

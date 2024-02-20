@@ -1,0 +1,53 @@
+.title-filter {
+    @apply
+    w-full
+    flex
+    flex-col
+}
+
+.title-filter .wrapper {
+    @apply
+    w-full
+    flex
+    justify-between
+    pt-10
+    pb-10
+    items-center
+}
+
+.title-filter .wrapper h1{
+    @apply
+    text-2xl
+}
+
+.title-filter .wrapper .filters{
+    @apply
+    flex
+    gap-5
+}
+
+.title-filter .wrapper .filters select{
+    @apply
+    bg-white
+    border-secondary-light
+    border
+    p-2
+    outline-0
+    cursor-pointer
+    text-sm
+    w-full
+    max-w-max
+}
+
+.title-filter .active-filters {
+    @apply
+    w-full
+    flex
+    gap-7
+}
+
+.title-filter .active-filters span{
+    @apply
+    cursor-pointer
+    text-sm
+}

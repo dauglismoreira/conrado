@@ -16,8 +16,8 @@
     flex-col
     justify-between
     h-full
-    pt-[65px]
-    pb-[25px]
+    pt-16
+    pb-7
 }
 
 .footer .container .wrapper:first-child {
@@ -25,7 +25,7 @@
     grid
     grid-cols-[30%_1fr]
     w-full
-    gap-[110px]
+    gap-28
 }
 
 .footer .container .wrapper:first-child .actions{
@@ -52,13 +52,13 @@
 
 .footer .container .wrapper:first-child .actions .addresses .address h3 {
     @apply
-    text-[14px]
+    text-sm
     text-third
 }
 
 .footer .container .wrapper:first-child .actions .addresses .address p {
     @apply
-    text-[16px]
+    text-sm
     font-extrabold
     text-primary
 }
@@ -66,16 +66,16 @@
 .footer .container .wrapper:first-child .actions .links {
     @apply
     flex
-    gap-[20px]
+    gap-5
     text-center
     h-full
-    mt-[70px]
+    mt-16
     align-middle
 }
 
 .footer .container .wrapper:first-child .actions .links .nav-link{
     @apply
-    text-[14px]
+    text-sm
     text-primary
     self-center
 }
@@ -93,5 +93,5 @@
 .footer .container .wrapper:last-child p {
     @apply
     text-primary
-    text-[11px]
+    text-xs
 }

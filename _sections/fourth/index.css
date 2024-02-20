@@ -1,0 +1,15 @@
+.recommended {
+    @apply
+    border-b
+    border-gray
+    w-full
+    pb-20
+}
+
+.recommended .wrapper {
+    @apply
+    mt-10
+    flex
+    w-full
+    gap-3
+}

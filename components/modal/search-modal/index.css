@@ -1,6 +1,54 @@
-.header {
+.search-modal {
     @apply
-    h-16
+    w-screen
+    h-screen
+    absolute
+    top-0
+    left-0
+    bg-white
+    flex
+    justify-center
+}
+
+.search-modal .close {
+    @apply
+    absolute
+    top-7
+    right-7
+}
+
+.search-modal .container {
+    @apply
+    max-w-2xl
+    flex
+    justify-center
+    pt-32
+    border-b-2
     w-full
-    bg-secondary
+    h-max
+}
+
+.search-modal .container .search-box{
+    @apply
+    flex
+    w-full
+    h-max
+    justify-center
+    items-center
+}
+
+.search-modal .container .search-box input {
+    @apply
+    border-0
+    outline-0
+    h-max
+    p-3
+    w-full
+}
+
+.search-modal .container .search-box img {
+    @apply
+    border-0
+    outline-0
+    h-max
 }

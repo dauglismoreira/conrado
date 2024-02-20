@@ -1,15 +1,15 @@
 .social-link {
     @apply
-    w-[39px]
-    h-[39px]
+    w-10
+    h-10
     border-third
     border
     flex
     rounded-full
-    p-[5px]
+    p-2
 }
 
 .social-link img{
     @apply
-    w-[30px]
+    w-8
 }

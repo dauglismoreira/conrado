@@ -1,0 +1,36 @@
+.error {
+    @apply
+    h-screen
+    p-20
+    w-full
+    flex
+    flex-col
+    justify-center
+    text-center
+    items-center
+}
+
+.error .title-error {
+    @apply
+    w-full
+    max-w-3xl
+    flex
+    justify-center
+    border-b-2
+    border-gray
+    pb-10
+    mb-10
+}
+
+.error p {
+    @apply
+    mb-10
+    text-secondary-light
+}
+
+.error .title-error h1{
+    @apply
+    text-6xl
+    text-center
+    max-w-2xl
+}

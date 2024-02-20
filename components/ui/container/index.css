@@ -1,0 +1,21 @@
+.main-container {
+    @apply
+    w-full
+    flex
+    flex-col
+    justify-center
+    align-middle
+    self-center
+    items-center
+    mb-20
+}
+
+.main-container .container-max {
+    @apply
+    max-w-1180
+    flex
+    w-full
+    flex-col
+    items-center
+    justify-center
+}

@@ -1,0 +1,229 @@
+.about {
+    @apply
+    w-full
+    flex
+    justify-center
+}
+
+.about .container {
+    @apply
+    pt-14
+    max-w-1180
+    w-full
+    pl-32
+    relative
+}
+
+.about .container .container-content{
+    @apply
+    max-w-[700px]
+}
+
+.about .container .wrapp-info {
+    @apply
+    absolute
+    right-0
+    top-[430px]
+}
+
+.about .container .wrapp-info h3 {
+    @apply
+    border-b-2
+    border-third
+    mb-3
+    max-w-max
+}
+
+.about .container .container-content .about-title {
+    @apply
+    mt-14
+    max-w-[880px]
+    pb-32
+}
+
+.about .container .container-content .about-title h3 {
+    @apply
+    mb-14
+    text-secondary-light
+    text-sm
+}
+
+.about .container .container-content .about-title h1 {
+    @apply
+    text-6xl
+    max-w-3xl
+    mb-14
+}
+
+.about .container .container-content .about-title p {
+    @apply
+    text-secondary
+    text-base
+}
+
+.about .container .container-content .about-title .about-info .line{
+    @apply
+    border-b-2
+    border-third
+    max-w-max
+    pl-10
+    pb-2
+}
+
+.about .container .container-content .about-title .about-info .line p{
+    @apply
+    translate-x-3
+    font-bold
+}
+
+.about .container .container-content .about-title .about-info {
+    @apply
+    mt-16
+    mb-16
+}
+
+.about .container .container-content .about-title .about-info .info-content {
+    @apply
+    pl-12
+    pt-5
+    text-base
+    text-secondary
+}
+
+.about .container .container-content .about-title .about-info ul {
+    @apply
+    pl-20
+    pt-5
+    text-base
+    text-secondary
+    list-disc
+}
+
+.about .container .container-content .about-title .about-info h3 {
+    @apply
+    pl-12
+    pt-5
+    mb-0
+    text-secondary
+    font-bold
+    text-2xl
+}
+
+.about .container .container-content .about-title .about-info h3:last-child {
+    @apply
+    pt-0
+}
+
+.about .container .container-content .about-title .about-info .address {
+    @apply
+    mt-10
+    mb-10
+    flex
+    pl-12
+    flex-col
+}
+
+.about .container .container-content .about-title .about-info .address h3 {
+    @apply
+    pl-0
+}
+
+.about .container .container-content .about-title .about-info .address .address-city {
+    @apply
+    text-sm
+    mb-3
+}
+
+.about .container .container-content .about-title .about-info .address .address-street {
+    @apply
+    text-sm
+    text-secondary-light
+}
+
+.about .container .container-content .about-title .about-info .address .address-phone {
+    @apply
+    font-medium
+    text-secondary
+}
+
+.about .container .container-content .about-title .contact {
+    @apply
+    flex-col
+    flex
+    w-full
+}
+
+.about .container .container-content .about-title .contact h1 {
+    @apply
+    text-2xl
+    w-full
+    font-bold
+}
+
+.about .container .container-content .about-title .contact .message-contact {
+    @apply
+    flex
+    flex-col
+}
+
+.about .container .container-content .about-title .contact .message-contact .wrapper .input-line textarea {
+    @apply
+    w-full
+    outline-0
+}
+
+.about .container .container-content .about-title .contact .message-contact .message-contact-grid {
+    @apply
+    pt-6
+    grid
+    grid-cols-2
+    w-full
+    gap-5
+}
+
+.about .container .container-content .about-title .contact .message-contact .wrapper {
+    @apply
+    w-full
+}
+
+.about .container .container-content .about-title .contact .message-contact .wrapper .input-line {
+    @apply
+    mb-10
+}
+
+.about .container .container-content .about-title .contact .message-contact .wrapper input {
+    @apply
+    w-full
+    border-b-2
+    outline-0
+    border-secondary-light
+    p-1
+}
+
+.about .container .container-content .about-title .contact .message-contact .wrapper .input-line legend {
+    @apply
+    text-sm
+    text-secondary-light
+}
+
+.about .container .container-content .about-title .contact .message-send {
+    @apply
+    flex
+    justify-between
+    gap-8
+    border-t-2
+    border-secondary-light
+    pt-10
+}
+
+.about .container .container-content .about-title .contact .message-send img {
+    @apply
+    flex
+    self-start
+}
+
+.about .container .container-content .about-title .contact .message-send p{
+    @apply
+    text-xs
+    text-secondary-light
+}

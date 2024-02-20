@@ -1,0 +1,37 @@
+.state-filter {
+    @apply
+    w-full
+    p-10
+    flex
+    flex-col
+    justify-center
+    text-center
+    items-center
+}
+
+.state-filter .container {
+    @apply
+    w-full
+    max-w-4xl
+}
+
+.state-filter .wrapper {
+    @apply
+    flex
+    justify-center
+    text-center
+    items-center
+    gap-5
+}
+
+.state-filter .container h3 {
+    @apply
+    mb-3
+    text-sm
+    text-secondary
+}
+
+.state-filter .wrapper button {
+    @apply
+    w-full
+}

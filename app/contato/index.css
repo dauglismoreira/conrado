@@ -1,0 +1,215 @@
+.contact {
+    @apply
+    grid
+    grid-cols-[38%_1fr]
+    h-auto
+}
+
+.contact .contact-list {
+    @apply
+    bg-secondary
+    pl-56
+    pr-24
+    h-full
+    pt-10
+}
+
+.contact .contact-list h3{
+    @apply
+    text-white
+    text-3xl
+    mb-4
+}
+
+.contact .contact-list p {
+    @apply
+    text-white
+    text-base
+    mb-12
+}
+
+.contact .contact-list a {
+    @apply
+    w-full
+    flex
+    justify-between
+    items-center
+    text-white
+    mb-7
+}
+
+.contact .contact-info {
+    @apply
+    pt-10
+    pl-20
+    pr-20
+}
+
+.contact .contact-info .address-info {
+    @apply
+    border-b-2
+    border-gray
+    pb-10
+    w-full
+}
+
+.contact .contact-info .address-info .address-title {
+    @apply
+    text-3xl
+    text-third
+}
+
+.contact .contact-info .address-info .address-street {
+    @apply
+    text-base
+    text-secondary-light
+    mb-2
+}
+
+.contact .contact-info .address-info .address-route {
+    @apply
+    text-base
+    text-secondary-light
+    mb-2
+}
+
+.contact .contact-info .address-info .route {
+    @apply
+    flex
+    gap-8
+    mb-6
+}
+
+.contact .contact-info .address-info .address-phone {
+    @apply
+    text-2xl
+    text-secondary-light
+}
+
+.contact .contact-info .address-info .address-mail {
+    @apply
+    text-base
+    text-secondary-light
+}
+
+.contact .contact-info .message {
+    @apply
+    pt-10
+    pb-10
+}
+
+.contact .contact-info .message .message-title-wrap {
+    @apply
+    mb-5
+}
+
+.contact .contact-info .message .message-title-wrap .message-title{
+    @apply
+    text-sm
+    text-secondary
+    font-bold
+    mb-2
+}
+
+.contact .contact-info .message .message-title-wrap .message-info {
+    @apply
+    text-base
+    text-secondary-light
+}
+
+.contact .contact-info .message .message-department .message-info{
+    @apply
+    text-sm
+    text-secondary-light
+    mb-3
+}
+
+.contact .contact-info .message .message-department select {
+    @apply
+    border-2
+    bg-white
+    border-secondary-light
+    p-4
+    w-full
+    max-w-[328px]
+    outline-0
+    cursor-pointer
+}
+
+.contact .contact-info .message .message-contact {
+    @apply
+    flex
+    flex-col
+}
+
+.contact .contact-info .message .message-contact .wrapper .input-line textarea {
+    @apply
+    w-full
+    outline-0
+}
+
+.contact .contact-info .message .message-contact .message-contact-grid {
+    @apply
+    pt-6
+    grid
+    grid-cols-2
+    w-full
+    gap-5
+}
+
+.contact .contact-info .message .message-contact .wrapper {
+    @apply
+    w-full
+}
+
+.contact .contact-info .message .message-contact .wrapper .input-line {
+    @apply
+    mb-10
+}
+
+.contact .contact-info .message .message-contact .wrapper input {
+    @apply
+    w-full
+    border-b-2
+    outline-0
+    border-secondary-light
+    p-1
+}
+
+.contact .contact-info .message .message-contact .wrapper .input-line legend {
+    @apply
+    text-sm
+    text-secondary-light
+}
+
+.contact .contact-info .message .message-send {
+    @apply
+    flex
+    justify-between
+    gap-8
+    border-t-2
+    border-secondary-light
+    pt-10
+}
+
+.contact .contact-info .message .message-send img {
+    @apply
+    flex
+    self-start
+}
+
+.contact .contact-info .message .message-send p{
+    @apply
+    text-xs
+    text-secondary-light
+}
+
+.map {
+    @apply
+    w-full
+    h-[300px]
+    bg-primary
+    flex
+    justify-center
+    items-center
+}

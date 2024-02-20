@@ -7,12 +7,15 @@
     flex
     justify-center
     p-2
+    sticky
+    top-0
+    z-10
 }
 
 .header .container {
     @apply
     w-full
-    max-w-screen-xl
+    max-w-1180
     flex
     justify-between
     h-full

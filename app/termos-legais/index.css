@@ -1,0 +1,24 @@
+.legal-therms {
+    @apply
+    pt-20
+    pb-20
+}
+
+.legal-therms .legal-title {
+    @apply
+    text-3xl
+    mb-28
+}
+
+.legal-therms section .legal-subtitle {
+    @apply
+    text-lg
+    mb-10
+}
+
+.legal-therms section .legal-paragraph {
+    @apply
+    text-lg
+    text-secondary-light
+    mb-10
+}

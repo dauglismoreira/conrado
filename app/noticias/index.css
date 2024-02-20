@@ -1,0 +1,72 @@
+.news {
+    @apply
+    w-full
+    flex
+    flex-col
+    pt-14
+    pb-14
+}
+
+.news .news-title {
+    @apply
+    text-left
+    text-3xl
+    mb-10
+    text-secondary
+}
+
+.news .highlight-card {
+    @apply
+    flex
+    gap-7
+    w-full
+}
+
+.news .highlight-card img{
+    @apply
+    max-w-[581px]
+    w-full
+}
+
+.news .highlight-card .content {
+    @apply
+    pt-10
+    pb-10
+    flex
+    flex-col
+    justify-center
+}
+
+.news .highlight-card .content h3 {
+    @apply
+    text-sm
+    text-secondary-light
+    font-semibold
+    mb-5
+}
+
+.news .highlight-card .content h1 {
+    @apply
+    text-3xl
+    mb-7
+    max-w-3xl
+}
+
+.news .highlight-card .content button {
+    @apply
+    max-w-max
+}
+.news .news-subtitle {
+    @apply
+    mt-12
+    mb-12
+    text-sm
+}
+
+.news .grid-list {
+    @apply
+    grid
+    grid-cols-4
+    gap-5
+    h-auto
+}
