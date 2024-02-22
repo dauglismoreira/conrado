@@ -1,10 +1,10 @@
 .cover {
     @apply
     w-full
-    h-[745px]
+    h-[870px]
     bg-no-repeat
     bg-top
-    bg-contain
+    bg-cover
     relative
 }
 
@@ -39,7 +39,7 @@
     left-0
     top-0
     w-full
-    h-[745px]
+    h-[870px]
     bg-black
     opacity-20
 }

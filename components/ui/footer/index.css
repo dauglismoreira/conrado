@@ -10,7 +10,7 @@
 
 .footer .container {
     @apply
-    max-w-screen-xl
+    max-w-1480
     w-full
     flex
     flex-col
