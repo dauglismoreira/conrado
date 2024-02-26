@@ -1,0 +1,38 @@
+.header-single {
+    @apply
+    h-14
+    w-full
+    bg-secondary-light
+    items-center
+    flex
+    justify-center
+    top-16
+    z-10
+    fixed
+}
+
+.header-single .container {
+    @apply
+    w-full
+    max-w-1480
+    flex
+    h-full
+}
+
+
+.header-single .container a {
+    @apply
+    border-l
+    items-center
+    flex
+    outline-0
+    border-white
+    text-white
+    text-sm
+    p-4
+}
+
+.header-single .container a:nth-child(8) {
+    @apply
+    border-r
+}

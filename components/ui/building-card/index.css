@@ -1,10 +1,11 @@
 .building-card {
     @apply
-    max-h-[663px]
+    max-h-[667px]
     max-w-[482px]
     w-full
     h-full
     relative
+    bg-white
 }
 
 .building-card .span-city {

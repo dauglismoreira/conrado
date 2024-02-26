@@ -1,0 +1,80 @@
+.new {
+    @apply
+    max-w-900
+    pt-20
+}
+
+.new .title-new {
+    @apply
+    mb-20
+}
+
+.new .title-new h3 {
+    @apply
+    text-sm
+    text-secondary-light
+    text-center
+    mb-10
+}
+
+.new .title-new h1 {
+    @apply
+    text-3xl
+    font-bold
+    text-center
+    mb-20
+}
+
+.new .new-body {
+    @apply
+    pl-14
+    pr-14
+}
+
+.new .new-body h3 {
+    @apply
+    text-xl
+    font-bold
+    text-secondary-light
+    mb-16
+}
+
+.new .new-body .body-content p {
+    @apply
+    mb-8
+    text-base
+    text-secondary-light
+}
+
+.new .new-body .body-content .body-share {
+    @apply
+    mt-10
+    mb-10
+    pt-10
+    pb-10
+    flex
+    border-t
+    border-b
+    border-gray
+    items-center
+    gap-7
+}
+
+.new .new-body .body-content .body-share h3 {
+    @apply
+    m-0
+    text-base
+}
+
+.new .new-body h1 {
+    @apply
+    text-xl
+    font-bold
+    mb-20
+}
+
+.new-wrapper {
+    @apply
+    flex
+    gap-5
+}

@@ -52,7 +52,7 @@ export default function Enterprise() {
   return (
     <main>
       <Header/>
-        <HeaderSingle links={["SOBRE", "O APARTAMENTO", "O EDIFICIO", "GALERIA", "PLANTAS", "VIDEO", "LOCALIZACAO", "ANDAMENTO DA OBRA"]}/>
+        <HeaderSingle links={["SOBRE", "O APARTAMENTO", "O EDIFICIO", "GALERIA", "LOCALIZACAO"]}/>
         <div className="single-cover" style={{backgroundImage: `url("${bgSingle.src}")`}}></div>
         <Container>
           <div className="enterprise-content">

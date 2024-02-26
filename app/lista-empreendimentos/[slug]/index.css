@@ -1,0 +1,424 @@
+.single-cover{
+    @apply
+    h-[587px]
+    w-full
+}
+
+.enterprise-content {
+    @apply
+    w-full
+    flex
+    justify-start
+}
+
+.enterprise-content .content {
+    @apply
+    w-full
+    max-w-[60%]
+    pt-20
+    pb-16
+}
+
+.enterprise-content .content h1{
+    @apply
+    text-3xl
+    font-bold
+    mb-5
+}
+
+.enterprise-content .content p {
+    @apply
+    text-base
+    text-secondary-light
+    mb-7
+}
+
+.enterprise-content .content .wrapper {
+    @apply
+    flex
+    items-center
+    gap-7
+    w-full
+}
+
+.enterprise-content .content .wrapper .icon-info {
+    @apply
+    flex
+    items-center
+    align-middle
+    mb-0
+    gap-3
+}
+
+.enterprise-content .content .wrapper .icon-info span {
+    @apply
+    text-secondary-light
+}
+
+.enterprise-content .fixed-content {
+    @apply
+    bg-secondary
+    ml-5
+    p-10
+    flex
+    flex-col
+    justify-center
+    align-middle
+    items-center
+    mt-16
+    absolute
+    right-48
+    z-[-99]
+}
+
+.enterprise-content .fixed-content .content-title {
+    @apply
+    border-b-gray
+    border-b
+    w-full
+    flex
+    flex-col
+    justify-center
+    align-middle
+    items-center
+}
+
+.enterprise-content .fixed-content .content-title img{
+    @apply
+    mb-10
+}
+
+.enterprise-content .fixed-content .content-title .wrapper {
+    @apply
+    flex
+    items-center
+    justify-evenly
+    w-full
+}
+
+.enterprise-content .fixed-content .content-title .wrapper .icon-info {
+    @apply
+    flex
+    items-center
+    align-middle
+    mb-0
+    p-5
+    gap-3
+}
+
+.enterprise-content .fixed-content .content-title .wrapper .icon-info img{
+    @apply
+    mb-0
+}
+
+.enterprise-content .fixed-content .content-title .wrapper .icon-info span {
+    @apply
+    text-white
+
+}
+
+.enterprise-content .fixed-content .content-action {
+    @apply
+    flex
+    flex-col
+    pt-10
+    gap-1
+    w-full
+}
+
+.enterprise-content .content .about-content {
+    @apply
+    border-b
+    border-t
+    border-gray
+    mb-10
+    mt-10
+    pb-16
+    pt-16
+}
+
+.enterprise-content .content .about-content h3 {
+    @apply
+    text-sm
+    text-secondary-light
+    mb-10
+}
+
+.enterprise-content .content .about-content h1 {
+    @apply
+    text-3xl
+    mb-10
+}
+
+.enterprise-content .content .about-content p {
+    @apply
+    text-base
+}
+
+.enterprise-content .content .enterprise-info {
+    @apply
+    border-b
+    border-gray
+    mb-16
+    pb-16
+}
+
+.enterprise-content .content .enterprise-info h3 {
+    @apply
+    text-sm
+    text-secondary
+    mb-5
+}
+
+.enterprise-content .content .enterprise-info .wrapper {
+    @apply
+    grid
+    grid-cols-2
+    gap-x-4
+}
+
+.enterprise-content .content .enterprise-info .wrapper .col {
+    @apply
+    flex
+    flex-col
+}
+
+.enterprise-content .content .enterprise-info .wrapper .col p {
+    @apply
+    text-secondary-light
+}
+
+.enterprise-content .content .enterprise-info .wrapper .col p span{
+    @apply
+    text-third
+    mr-3
+    text-base
+}
+
+.enterprise-content .content .enterprise-info .btn-actions {
+    @apply
+    flex
+    gap-5
+}
+
+.enterprise-content .content .enterprise-info .wrapper {
+    @apply
+    mt-10
+}
+
+.enterprise-content .content .enterprise-info p {
+    @apply
+    text-base
+    text-secondary-light
+}
+
+.enterprise-content .content .enterprise-info .wrapper-3 {
+    @apply
+    grid-cols-3
+    grid
+    gap-y-3
+    mb-10
+}
+
+.enterprise-content .content .enterprise-info .wrapper-3 p{
+    @apply
+    text-secondary-light
+    mb-0
+}
+
+.enterprise-content .content .enterprise-info .wrapper-3 p span{
+    @apply
+    text-third
+    mr-3
+    text-base
+}
+
+.enterprise-content .content .enterprise-info .wrapper-graph {
+    @apply
+    flex
+    gap-12
+    pl-16
+    pr-16
+}
+
+.enterprise-content .content .enterprise-info .wrapper-graph .graph {
+    @apply
+    w-48
+}
+
+.enterprise-content .content .enterprise-info .wrapper-graph .graph-content {
+    @apply
+    grid
+    grid-cols-2
+    w-full
+    gap-x-3
+    h-full
+    items-center
+    pt-3
+}
+
+.enterprise-content .content .enterprise-info .wrapper-graph .graph-content .col{
+    @apply
+    flex
+    flex-col
+}
+
+.enterprise-content .content .enterprise-info .wrapper-graph .graph-content .col .wrapper-content {
+    @apply
+    mb-6
+}
+
+.enterprise-content .content .enterprise-info .wrapper-graph .graph-content .col .wrapper-content .bar{
+    @apply
+    w-full
+    overflow-hidden
+    bg-secondary-light
+    h-[3px]
+}
+
+.enterprise-content .content .enterprise-info .wrapper-graph .graph-content .col .wrapper-content .bar .progress{
+    @apply
+    bg-third
+    h-full
+}
+
+.enterprise-content .content .enterprise-info .wrapper-graph .graph-content .col .wrapper-content .info {
+    @apply
+    flex
+    mt-1
+    justify-between
+}
+
+.enterprise-content .content .enterprise-info .wrapper-graph .graph-content .col .wrapper-content .info span{
+    @apply
+    text-sm
+    text-secondary-light
+}
+
+.enterprise-content .enterprise-info .contact {
+    @apply
+    flex-col
+    flex
+    w-full
+}
+
+.enterprise-content .enterprise-info .contact h1 {
+    @apply
+    text-2xl
+    w-full
+    font-bold
+}
+
+.enterprise-content .enterprise-info .contact .message-contact {
+    @apply
+    flex
+    flex-col
+}
+
+.enterprise-content .enterprise-info .contact .message-contact .wrapper {
+    @apply
+    flex
+    flex-col
+    w-full
+}
+
+.enterprise-content .enterprise-info .contact .message-contact .wrapper .input-line {
+    @apply
+    w-full
+}
+
+.enterprise-content .enterprise-info .contact .message-contact .wrapper .input-line textarea {
+    @apply
+    w-full
+    outline-0
+}
+
+.enterprise-content .enterprise-info .contact .message-contact .message-contact-grid {
+    @apply
+    pt-6
+    grid
+    grid-cols-2
+    w-full
+    gap-5
+}
+
+.enterprise-content .enterprise-info .contact .message-contact .wrapper {
+    @apply
+    w-full
+}
+
+.enterprise-content .enterprise-info .contact .message-contact .wrapper .input-line {
+    @apply
+    mb-10
+}
+
+.enterprise-content .enterprise-info .contact .message-contact .wrapper input {
+    @apply
+    w-full
+    border-b-2
+    outline-0
+    border-secondary-light
+    p-1
+}
+
+.enterprise-content .enterprise-info .contact .message-contact .wrapper .input-line legend {
+    @apply
+    text-sm
+    text-secondary-light
+}
+
+.enterprise-content .enterprise-info .contact .message-send {
+    @apply
+    flex
+    justify-between
+    gap-8
+    border-t-2
+    border-secondary-light
+    pt-10
+}
+
+.enterprise-content .enterprise-info .contact .message-send img {
+    @apply
+    flex
+    self-start
+}
+
+.enterprise-content .enterprise-info .contact .message-send p{
+    @apply
+    text-xs
+    text-secondary-light
+}
+
+.recommended-buildings {
+    @apply
+    w-full
+    bg-secondary
+}
+
+.recommended-buildings div .content-build {
+    @apply
+    w-full
+    pt-16
+}
+
+.recommended-buildings div .content-build h1{
+    @apply
+    text-third
+    text-xl
+    font-bold
+    mb-16
+}
+
+
+.recommended-buildings div .content-build .new-wrapper {
+    @apply
+    w-full
+    flex
+    h-[667px]
+    gap-3
+}
+
+.recommended-buildings .main-container {
+    @apply
+    mb-0
+}
