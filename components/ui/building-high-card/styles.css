@@ -1,0 +1,72 @@
+.card-container{
+    @apply
+    flex w-full justify-between
+    flex-col-reverse lg:flex-row gap-4 lg:gap-0
+}
+
+.card-container .image{
+    @apply
+    w-[581px]
+    h-[478px]
+    lg:h-[704px]
+    object-cover
+}
+
+.card-container .content h3 {
+    @apply
+    text-secondary-light
+    text-sm
+    mb-5
+}
+
+.card-container .content h1 {
+    @apply
+    text-4xl
+    text-secondary
+    mb-5
+}
+
+.card-container .content p {
+    @apply
+    text-base
+    text-secondary-light
+    mb-12
+    max-w-[428px]
+    text-justify
+}
+
+.card-container .content ul {
+    @apply
+    mb-12 lg:mb-20
+}
+
+.card-container .content ul li{
+    @apply
+    flex
+    gap-4
+    mb-5
+    text-secondary-light
+    text-base
+}
+
+.card-container .content ul li span {
+    @apply
+    max-w-[30px]
+    w-full
+    p-0.5
+    flex
+    justify-center
+    align-middle
+}
+
+.card-container .content button{
+    @apply
+    lg:w-auto w-full
+}
+
+.card-container .content button:hover {
+    background-color: #FAAF1D!important;
+    border: #FAAF1D;
+    box-sizing: border-box;
+    color: black!important;
+}

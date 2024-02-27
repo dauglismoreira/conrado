@@ -1,31 +1,36 @@
 .search-modal {
+    transform:translate(0, -100%);
     @apply
-    w-screen
-    h-screen
-    absolute
-    top-0
-    left-0
-    bg-white
-    flex
-    justify-center
+    w-full h-full fixed bg-white z-50 transition top-0
 }
+
+.search-modal.active{
+    transform:translate(0, 0);
+}
+
 
 .search-modal .close {
     @apply
     absolute
-    top-7
-    right-7
+    top-5
+    right-5
+}
+
+.search-modal .close img{
+    @apply
+    w-6 h-6
 }
 
 .search-modal .container {
+    width:calc(100% - 40px);
     @apply
     max-w-2xl
     flex
     justify-center
     pt-32
     border-b-2
-    w-full
     h-max
+    mx-auto
 }
 
 .search-modal .container .search-box{

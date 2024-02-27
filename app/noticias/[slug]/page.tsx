@@ -15,7 +15,6 @@ export default function New() {
     const recommended = [1,2,3];
     return (
         <main>
-            <Header/>
             <Container>
                 <>
                     <div className="new">
@@ -87,7 +86,6 @@ export default function New() {
                     </div>
                 </>
             </Container>
-            <Footer/>
         </main>
     );
 }

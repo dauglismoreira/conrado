@@ -1,7 +1,7 @@
 .footer {
     @apply
     w-full
-    h-[409px]
+    lg:h-[409px]
     bg-secondary
     flex
     justify-center
@@ -22,10 +22,14 @@
 
 .footer .container .wrapper:first-child {
     @apply
-    grid
-    grid-cols-[30%_1fr]
+    flex
+    flex-col
+    items-center
+    lg:grid
+    lg:grid-cols-[30%_1fr]
     w-full
-    gap-28
+    lg:gap-28
+    gap-8
 }
 
 .footer .container .wrapper:first-child .actions{
@@ -38,8 +42,14 @@
 .footer .container .wrapper:first-child .actions .addresses{
     @apply
     flex
+    flex-col
+    lg:flex-row
     w-full
     justify-between
+    items-center
+    lg:items-start
+    gap-8
+    lg:gap-0
 }
 
 .footer .container .wrapper:first-child .actions .addresses .address{
@@ -61,16 +71,35 @@
     text-sm
     font-extrabold
     text-primary
+    text-center
+    lg:text-left
 }
 
 .footer .container .wrapper:first-child .actions .links {
     @apply
     flex
+    flex-col
+    lg:flex-row
     gap-5
     text-center
+    lg:flex-nowrap
     h-full
-    mt-16
+    mt-8
+    lg:mt-16
     align-middle
+    justify-between
+    mb-8
+    lg:mb-0
+}
+
+.footer .container .wrapper:first-child .actions .social-links{
+    @apply
+    flex
+    flex-row
+    justify-center
+    gap-8
+    mb-4
+    lg:mb-0
 }
 
 .footer .container .wrapper:first-child .actions .links .nav-link{
@@ -87,11 +116,21 @@
     border-secondary-light
     pt-5
     flex
+    flex-col
+    lg:flex-row
+    items-center
+    lg:items-start
     justify-between
+    gap-8
+    lg:gap-0
 }
 
 .footer .container .wrapper:last-child p {
     @apply
     text-primary
     text-xs
+    text-center
+    lg:text-left
+    whitespace-pre-line
+    lg:whitespace-normal
 }

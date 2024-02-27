@@ -1,6 +1,4 @@
 'use client';
-import Header from "@/components/ui/header";
-import Footer from "@/components/ui/footer";
 import './index.css'
 import Image from "next/image";
 import videoThumb from "../../assets/video 1.png";
@@ -14,16 +12,15 @@ export default function Contact() {
             <div className="bg-asset">
                 <Image src={bgAsset} alt="" />
             </div>
-            <Header/>
             <div className="about">
                 <div className="container">
-                    <div className="wrapp-info">
+                    <div className="wrapp-info ">
                         <h3>LOTEADORA</h3>
                         <h3>INCORPORADORA</h3>
                         <h3>CONSTRUTORA</h3>
                     </div>
                     <div className="container-content">
-                        <Image src={videoThumb} alt="video"/>
+                        <Image className="about-video" src={videoThumb} alt="video"/>
                         <div className="about-title">
                             <h3>Conrado Empreendimentos</h3>
                             <h1>Uma história edificada com confiança</h1>
@@ -89,51 +86,50 @@ export default function Contact() {
                             <div className="contact">
                                 <h1>Agora que você já conhece um pouco da história da Conrado, que tal fazermos parte da
                                     sua?</h1>
-                                <div className="message-contact">
-                                    <div className="message-contact-grid">
-                                        <div className="wrapper">
-                                            <div className="input-line">
-                                                <legend>NOME</legend>
-                                                <input type="text"/>
+                                    <div className="message-contact">
+                                        <div className="message-contact-grid">
+                                            <div className="wrapper">
+                                                <div className="input-line">
+                                                    <legend>NOME</legend>
+                                                    <input type="text"/>
+                                                </div>
+                                                <div className="input-line">
+                                                    <legend>TELEFONE</legend>
+                                                    <input type="email"/>
+                                                </div>
                                             </div>
-                                            <div className="input-line">
-                                                <legend>TELEFONE</legend>
-                                                <input type="email"/>
+                                            <div className="wrapper">
+                                                <div className="input-line">
+                                                    <legend>EMAIL</legend>
+                                                    <input type="text"/>
+                                                </div>
+                                                <div className="input-line">
+                                                    <legend>CIDADE</legend>
+                                                    <input type="email"/>
+                                                </div>
                                             </div>
                                         </div>
                                         <div className="wrapper">
                                             <div className="input-line">
-                                                <legend>EMAIL</legend>
-                                                <input type="text"/>
-                                            </div>
-                                            <div className="input-line">
-                                                <legend>CIDADE</legend>
-                                                <input type="email"/>
+                                                <legend>MENSAGEM</legend>
+                                                <textarea name="" id="" rows={6}></textarea>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="wrapper">
-                                        <div className="input-line">
-                                            <legend>MENSAGEM</legend>
-                                            <textarea name="" id="" rows={6}></textarea>
+                                    <div className="message-send">
+                                        <div className="right-container">
+                                            <input name='accept' type="checkbox" id="accept" />
+                                            <label htmlFor='accept'>
+                                                A Conrado respeita sua privacidade e utiliza seus dados pessoais para contatá-lo por e-mail ou telefone aqui registrados. Para saber mais, acesse nossa Política de Privacidade. Ao clicar em "Enviar", você concorda em permitir que a Conrado armazene e processe os dados pessoais fornecidos por você para a finalidade informada.
+                                            </label>
                                         </div>
+                                        <ButtonPrimary text="ENVIAR" onClick={() => alert("")} classStyle="#5C635E" />
                                     </div>
-                                </div>
-                                <div className="message-send">
-                                    <Image src={right} alt='right-image'/>
-                                    <p>A Conrado respeita sua privacidade e utiliza seus dados pessoais para contatá-lo
-                                        por e-mail ou telefone aqui registrados. Para saber mais, acesse nossa Política
-                                        de Privacidade.A o clicar em "Enviar", você concorda em permitir que a Conrado
-                                        armazene e processe os dados pessoais fornecidos por você para a finalidade
-                                        informada.</p>
-                                    <ButtonPrimary text="ENVIAR" onClick={() => alert("")} classStyle="#5C635E"/>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <Footer/>
         </main>
     );
 }

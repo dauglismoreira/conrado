@@ -1,7 +1,11 @@
 .blog-card {
+    max-width: 465px;
+    
     @apply
-    w-[282px]
-    h-[399px]
+    lg:w-[282px]
+    w-full
+    lg:h-[399px]
+    h-[358px]
     flex
     flex-col
     justify-between
@@ -40,7 +44,7 @@
 
 .blog-card .wrapper button {
     @apply
-    max-w-max
+    lg:max-w-max w-full
 }
 
 .blog-card .wrapper button:hover {

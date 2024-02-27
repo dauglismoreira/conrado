@@ -1,7 +1,9 @@
 .contact {
     @apply
-    grid
-    grid-cols-[38%_1fr]
+    lg:grid
+    lg:grid-cols-[38%_1fr]
+    flex
+    flex-col
     h-auto
 }
 
@@ -28,7 +30,7 @@
     mb-12
 }
 
-.contact .contact-list a {
+.contact .contact-list .city {
     @apply
     w-full
     flex
@@ -36,13 +38,42 @@
     items-center
     text-white
     mb-7
+    cursor-pointer
+    hover:text-third
 }
+
+.contact .contact-list .city.active{
+    @apply
+    text-third
+}  
 
 .contact .contact-info {
     @apply
     pt-10
     pl-20
-    pr-20
+    pr-56
+}
+
+@media(max-width:1420px){
+    .contact .contact-info{
+        @apply
+        pr-20
+    }
+    .contact .contact-list {
+        @apply
+        pl-24
+    }
+}
+
+@media(max-width:1024px){
+    .contact .contact-info{
+        @apply
+        p-4
+    }
+    .contact .contact-list {
+        @apply
+        p-4
+    }
 }
 
 .contact .contact-info .address-info {
@@ -61,9 +92,10 @@
 
 .contact .contact-info .address-info .address-street {
     @apply
+    lg:my-4
+    my-8
     text-base
     text-secondary-light
-    mb-2
 }
 
 .contact .contact-info .address-info .address-route {
@@ -88,7 +120,10 @@
 
 .contact .contact-info .address-info .address-mail {
     @apply
-    text-base
+    text-sm
+    mt-6
+    lg:mt-0
+    lg:text-base
     text-secondary-light
 }
 
@@ -124,14 +159,48 @@
     mb-3
 }
 
-.contact .contact-info .message .message-department select {
+.contact .contact-list .select-container {
+    @apply
+    border-2
+    bg-secondary
+    border-white
+    px-2
+    w-full
+    lg:max-w-[328px]
+    outline-0
+    cursor-pointer
+    text-white
+}
+
+.contact .contact-list select {
+    @apply
+    h-12
+    w-full
+    outline-0
+    cursor-pointer
+}
+
+.contact .contact-list select option{
+    @apply
+    text-black
+}
+
+.contact .contact-info .message .message-department .select-container {
     @apply
     border-2
     bg-white
     border-secondary-light
-    p-4
+    px-2
     w-full
-    max-w-[328px]
+    lg:max-w-[328px]
+    outline-0
+    cursor-pointer
+}
+
+.contact .contact-info .message .message-department select {
+    @apply
+    h-12
+    w-full
     outline-0
     cursor-pointer
 }
@@ -151,8 +220,8 @@
 .contact .contact-info .message .message-contact .message-contact-grid {
     @apply
     pt-6
-    grid
-    grid-cols-2
+    lg:grid
+    lg:grid-cols-2
     w-full
     gap-5
 }
@@ -176,6 +245,7 @@
     p-1
 }
 
+
 .contact .contact-info .message .message-contact .wrapper .input-line legend {
     @apply
     text-sm
@@ -190,6 +260,13 @@
     border-t-2
     border-secondary-light
     pt-10
+    flex-col
+    lg:flex-row
+}
+
+.contact .contact-info .message .message-send .right-container{
+    @apply
+    flex gap-4 items-start
 }
 
 .contact .contact-info .message .message-send img {
@@ -198,7 +275,7 @@
     self-start
 }
 
-.contact .contact-info .message .message-send p{
+.contact .contact-info .message .message-send label{
     @apply
     text-xs
     text-secondary-light

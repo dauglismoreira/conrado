@@ -1,0 +1,46 @@
+.menu-modal {
+    transform:translate(0, -100%);
+    top:63px;
+    @apply
+    w-full h-full fixed bg-secondary z-10 transition
+}
+
+.menu-modal.active{
+    transform:translate(0, 0);
+}
+
+.menu-modal .container {
+    height:calc(100vh - 64px);
+    @apply
+    w-full flex flex-col items-center justify-around
+}
+
+.menu-modal .container svg{
+    @apply
+    w-12 h-12
+}
+
+.menu-modal .container ul.mobile-available{
+    @apply
+    flex flex-col text-2xl h-auto text-white text-center gap-10
+}
+
+.menu-modal .container .social-links{
+    @apply
+    flex gap-8
+}
+
+.menu-modal .container .social-mobile-container{
+    @apply
+    w-full flex gap-8 flex-col items-center px-8
+}   
+
+.menu-modal .container .social-mobile-container button{
+    @apply
+    w-full border-third border block h-12 uppercase text-third
+}
+
+.menu-modal .container .social-mobile-container .contact-button{
+    @apply
+    w-full
+}

@@ -1,15 +1,26 @@
 .last-news {
     @apply
     w-full
-    pb-20
-    pl-36
-    pr-36
+    lg:pb-20
+    pb-8
+    lg:pt-0
+    pt-4
+    max-w-1420
+    mx-auto
 }
 
 .last-news .wrapper-content {
     @apply
-    mt-10
+    mt-8
+    lg:mt-10
     flex
+    flex-col
+    lg:flex-row
     w-full
-    gap-5
+    lg:gap-5
+    gap-8
+    items-center
+    px-4
+    lg:px-0
+    lg:justify-center
 }

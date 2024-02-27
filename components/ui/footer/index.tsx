@@ -50,9 +50,11 @@ export default function Footer(){
                         }
                     </div>
                     <div className="links">
-                        <SocialLink key="instagram" link='#' icon={instagram}/>
-                        <SocialLink key="facebook" link='#' icon={facebook}/>
-                        <SocialLink key="youtube" link='#' icon={youtube}/>
+                        <div className="social-links">
+                            <SocialLink key="instagram" link='#' icon={instagram}/>
+                            <SocialLink key="facebook" link='#' icon={facebook}/>
+                            <SocialLink key="youtube" link='#' icon={youtube}/>
+                        </div>
                         <a className="nav-link" href="#">EDIFÍCIOS</a>
                         <a className="nav-link" href="#">LOTEAMENTOS</a>
                         <a className="nav-link" href="#">EXCLUSIVOS</a>
@@ -63,8 +65,8 @@ export default function Footer(){
                 </div>
             </div>
             <div className="wrapper">
-                <p>CONRADO EMPREENDIMENTOS. TODOS OS DIREITOS RESERVADOS.</p>
-                <p>PRIVACIDADE E SEGURANÇA. DESENVOLVIDO POR IMPACTE</p>
+                <p>{`CONRADO EMPREENDIMENTOS. \nTODOS OS DIREITOS RESERVADOS.`}</p>
+                <p>{`PRIVACIDADE E SEGURANÇA. \nDESENVOLVIDO POR IMPACTE`}</p>
             </div>
         </div>
     </footer>

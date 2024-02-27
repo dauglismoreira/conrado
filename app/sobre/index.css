@@ -8,6 +8,7 @@
 .bg-asset img {
     @apply
     w-[1628px]
+    lg:h-auto
 }
 
 .about {
@@ -19,10 +20,12 @@
 
 .about .container {
     @apply
-    pt-16
+    lg:pt-16
+    pt-8
     max-w-[1383px]
     w-full
-    pl-32
+    lg:pl-32
+    p-4
     relative
 }
 
@@ -31,11 +34,20 @@
     max-w-[882px]
 }
 
+.about .container .container-content .about-video{
+    @apply
+    lg:h-auto
+    h-[478px]
+    object-cover
+}
+
 .about .container .wrapp-info {
     @apply
     absolute
     right-[-50px]
     top-[523px]
+    lg:block
+    hidden
 }
 
 .about .container .wrapp-info h3 {
@@ -51,7 +63,8 @@
 
 .about .container .container-content .about-title {
     @apply
-    mt-14
+    lg:mt-14
+    mt-8
     max-w-[880px]
     pb-32
 }
@@ -60,15 +73,18 @@
     @apply
     mb-14
     text-secondary-light
-    text-sm
+    text-sm text-center lg:text-left text-lg
 }
 
 .about .container .container-content .about-title h1 {
     @apply
-    text-6xl
+    lg:text-6xl
+    text-3xl
     max-w-3xl
     mb-14
     font-bold
+    text-center
+    lg:text-left
 }
 
 .about .container .container-content .about-title p {
@@ -123,6 +139,7 @@
     text-secondary
     font-bold
     text-2xl
+    text-left
 }
 
 .about .container .container-content .about-title .about-info h3:last-child {
@@ -137,6 +154,8 @@
     flex
     pl-12
     flex-col
+    lg:pr-0
+    pr-4
 }
 
 .about .container .container-content .about-title .about-info .address h3 {
@@ -176,38 +195,38 @@
     font-bold
 }
 
-.about .container .container-content .about-title .contact .message-contact {
+.about .message-contact {
     @apply
     flex
     flex-col
 }
 
-.about .container .container-content .about-title .contact .message-contact .wrapper .input-line textarea {
+.about .message-contact .wrapper .input-line textarea {
     @apply
     w-full
     outline-0
 }
 
-.about .container .container-content .about-title .contact .message-contact .message-contact-grid {
+.about .message-contact .message-contact-grid {
     @apply
     pt-6
-    grid
-    grid-cols-2
+    lg:grid
+    lg:grid-cols-2
     w-full
     gap-5
 }
 
-.about .container .container-content .about-title .contact .message-contact .wrapper {
+.about .message-contact .wrapper {
     @apply
     w-full
 }
 
-.about .container .container-content .about-title .contact .message-contact .wrapper .input-line {
+.about .message-contact .wrapper .input-line {
     @apply
     mb-10
 }
 
-.about .container .container-content .about-title .contact .message-contact .wrapper input {
+.about .message-contact .wrapper input {
     @apply
     w-full
     border-b-2
@@ -216,13 +235,14 @@
     p-1
 }
 
-.about .container .container-content .about-title .contact .message-contact .wrapper .input-line legend {
+
+.about .message-contact .wrapper .input-line legend {
     @apply
     text-sm
     text-secondary-light
 }
 
-.about .container .container-content .about-title .contact .message-send {
+.about .message-send {
     @apply
     flex
     justify-between
@@ -230,15 +250,22 @@
     border-t-2
     border-secondary-light
     pt-10
+    flex-col
+    lg:flex-row
 }
 
-.about .container .container-content .about-title .contact .message-send img {
+.about .message-send .right-container{
+    @apply
+    flex gap-4 items-start
+}
+
+.about .message-send img {
     @apply
     flex
     self-start
 }
 
-.about .container .container-content .about-title .contact .message-send p{
+.about .message-send label{
     @apply
     text-xs
     text-secondary-light

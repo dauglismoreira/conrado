@@ -3,30 +3,49 @@
     border-b
     border-gray
     w-full
-    pb-36
-    pl-40
-    pr-40
+    pb-16
+    lg:pb-36
+    max-w-1420
+    mx-auto
     justify-center
     flex
     flex-col
     items-center
+    px-4
+    lg:px-0
+}
+
+.history h1{
+    @apply
+    text-secondary
 }
 
 .history .history-title {
     @apply
-    pt-10
-    pb-10
+    py-4
+    lg:py-10
     w-full
-    text-6xl
+    text-3xl
+    lg:text-6xl
     font-bold
     text-center
     max-w-3xl
-    text-secondary
+    text-black
+    mb-8
+    lg:mb-0
 }
 
 .history img {
     @apply
     mb-12
+    h-[478px]
+    object-cover
+}
+
+.history button{
+    @apply
+    w-full
+    lg:w-auto
 }
 
 .history button:hover {

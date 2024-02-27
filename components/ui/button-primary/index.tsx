@@ -5,8 +5,9 @@ interface ButtonPrimary {
   onClick: () => void,
   classStyle: string,
   bgCol?: string,
+  className?:string
 }
 
-export default function ButtonPrimary({text, onClick, classStyle, bgCol}: ButtonPrimary){
-  return <button className="btn-primary" style={{borderColor: classStyle, color: classStyle, backgroundColor: bgCol}} onClick={onClick}>{text}</button>
+export default function ButtonPrimary({text, onClick, className, classStyle, bgCol}: ButtonPrimary){
+  return <button className={`btn-primary ${className}`} style={{borderColor: classStyle, color: classStyle, backgroundColor: bgCol}} onClick={onClick}>{text}</button>
 }

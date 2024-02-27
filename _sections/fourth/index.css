@@ -3,13 +3,18 @@
     border-b
     border-gray
     w-full
-    pb-36
+    pb-20
+    lg:pb-36
 }
 
 .recommended .wrapper {
     @apply
     mt-10
     flex
+    flex-col
+    lg:flex-row
     w-full
     gap-3
+    px-4
+    items-center
 }

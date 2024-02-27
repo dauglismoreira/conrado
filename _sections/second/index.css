@@ -1,7 +1,7 @@
 .state-filter {
     @apply
     w-full
-    p-10
+    lg:p-10
     flex
     flex-col
     justify-center
@@ -17,21 +17,68 @@
 
 .state-filter .wrapper {
     @apply
-    flex
+    lg:flex
     justify-center
     text-center
     items-center
     gap-5
+    hidden
 }
 
 .state-filter .container h3 {
     @apply
     mb-3
     text-sm
-    text-secondary
+    lg:text-secondary
+    lg:bg-transparent
+    bg-secondary
+    text-white
+    w-full
+}
+
+@media(max-width:1024px){
+    .state-filter .container h3{
+        font-size:11px;
+    }
 }
 
 .state-filter .wrapper button {
     @apply
     w-full
+}
+
+.state-filter .filter-accordion{
+    transition:0.2s;
+    @apply
+    w-full px-4 h-12 overflow-hidden  border-b border-black mb-12 block lg:hidden
+}
+
+.state-filter .filter-accordion span{
+    @apply
+    text-secondary font-semibold uppercase
+}
+
+.state-filter .filter-accordion svg{
+    @apply
+    w-8 h-8 fill-third rotate-180 transition
+}
+
+.state-filter .filter-accordion.active svg{
+    @apply
+    rotate-0
+}
+
+.state-filter .filter-accordion.active{
+    @apply
+    h-60
+}
+
+.state-filter .filter-accordion .accordion-body{
+    @apply
+    flex flex-col gap-2
+}
+
+.state-filter .filter-accordion .accordion-title{
+    @apply
+    w-full h-12 flex items-center justify-between cursor-pointer
 }

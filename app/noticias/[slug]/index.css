@@ -1,12 +1,14 @@
 .new {
     @apply
     max-w-900
-    pt-20
+    lg:pt-20
+    pt-8
+    w-full
 }
 
 .new .title-new {
     @apply
-    mb-20
+    lg:mb-20 px-4 mb-8
 }
 
 .new .title-new h3 {
@@ -14,29 +16,41 @@
     text-sm
     text-secondary-light
     text-center
-    mb-10
+    lg:mb-10
+    mb-8
 }
 
 .new .title-new h1 {
     @apply
-    text-3xl
+    lg:text-3xl
+    text-lg
     font-bold
     text-center
-    mb-20
+    lg:mb-20
+    mb-4
+}
+
+.new .title-new img{
+    @apply
+    h-[231px]
+    lg:h-auto
+    object-cover
 }
 
 .new .new-body {
     @apply
-    pl-14
-    pr-14
+    lg:px-14
+    px-4
 }
 
 .new .new-body h3 {
     @apply
-    text-xl
+    lg:text-xl
+    text-lg
     font-bold
     text-secondary-light
-    mb-16
+    lg:mb-16
+    mb-4
 }
 
 .new .new-body .body-content p {
@@ -48,33 +62,42 @@
 
 .new .new-body .body-content .body-share {
     @apply
-    mt-10
-    mb-10
-    pt-10
-    pb-10
+    lg:my-10
+    px-4
+    py-10
     flex
     border-t
     border-b
     border-gray
     items-center
+    lg:justify-start
+    justify-between
     gap-7
 }
 
 .new .new-body .body-content .body-share h3 {
     @apply
     m-0
-    text-base
+    lg:text-base text-xs
 }
 
 .new .new-body h1 {
     @apply
     text-xl
     font-bold
-    mb-20
+    lg:mb-20
+    mb-8
+    mt-8
+    lg:mt-0
+    text-center
+    lg:text-left
 }
 
 .new-wrapper {
     @apply
     flex
     gap-5
+    flex-col
+    lg:flex-row
+    px-4
 }

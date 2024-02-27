@@ -1,7 +1,8 @@
 .subdivision-card {
     @apply
     flex
-    w-[465px]
+    max-w-[465px]
+    w-full
     flex-col
     border-[#CDCDCD]
     border

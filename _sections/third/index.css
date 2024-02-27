@@ -1,71 +1,54 @@
-.buildings {
+.high-buildings {
     @apply
     flex
     flex-col
     gap-10
-    pl-36
-    pr-36
-}
-
-.buildings .wrapper{
-    @apply
-    grid
-    grid-cols-2
-    max-h-[704px]
-    h-full
-    overflow-hidden
-}
-
-.buildings .wrapper .content h3 {
-    @apply
-    text-secondary-light
-    text-sm
-    mb-5
-}
-
-.buildings .wrapper .content h1 {
-    @apply
-    text-4xl
-    text-secondary
-    mb-5
-}
-
-.buildings .wrapper .content p {
-    @apply
-    text-base
-    text-secondary-light
-    mb-12
-    max-w-[428px]
-    text-justify
-}
-
-.buildings .wrapper .content ul {
-    @apply
-    mb-20
-}
-
-.buildings .wrapper .content ul li{
-    @apply
-    flex
-    gap-4
-    mb-5
-    text-secondary-light
-    text-base
-}
-
-.buildings .wrapper .content ul li span {
-    @apply
-    max-w-[30px]
     w-full
-    p-0.5
-    flex
-    justify-center
-    align-middle
 }
 
-.buildings .wrapper .content button:hover {
-    background-color: #FAAF1D!important;
-    border: #FAAF1D;
-    box-sizing: border-box;
-    color: black!important;
+.high-buildings .slider-box{
+    @apply
+    lg:h-[704px]
+    max-w-[1420px]
+    overflow-hidden
+    relative
+    w-full
+    mx-auto
+    flex
+}
+
+.slider-size{
+    width:calc(100% - 240px);
+
+    @apply
+    relative overflow-hidden
+}
+
+
+.high-buildings .slider-box .slider-navigation{
+    min-width:120px;
+
+    @apply
+    h-full flex items-center
+}
+
+@media(max-width:1024px){
+    .high-buildings .slider-box .slider-navigation{
+        min-width:20px;
+    }
+}
+
+.high-buildings .slider-box .slider-navigation svg{
+    @apply
+    transition hover:scale-105 fill-third w-8 h-8 relative z-30
+}
+
+.high-buildings .slider-box .slider-navigation:first-child{
+    @apply
+    justify-end left-0 lg:justify-start
+}
+
+.high-buildings .slider-box .slider-navigation:last-child{
+    @apply
+    justify-end right-0
 }

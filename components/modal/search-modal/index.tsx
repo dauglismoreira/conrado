@@ -15,9 +15,7 @@ export default function SearchModal({open, onClose}: SearchModal){
     };
 
     return <>
-        {
-            open &&
-            <div className="search-modal">
+            <div className={`search-modal ${open ? 'active' : ''}`}>
                 <button onClick={handleCloseModal} className="close"><Image src={close} alt="Botão Fechar" /></button>
                 <div className="container">
                     <div className="search-box">
@@ -26,6 +24,5 @@ export default function SearchModal({open, onClose}: SearchModal){
                     </div>
                 </div>
             </div>
-        }
     </>
 }

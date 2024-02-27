@@ -3,17 +3,21 @@
     w-full
     flex
     flex-col
-    pt-16
-    pb-16
-    pl-36
-    pr-36
+    p-4
+    lg:py-16
+    lg:px-36
 }
 
 .news .news-title {
     @apply
-    text-left
-    text-3xl
-    mb-14
+    lg:text-left
+    text-center
+    lg:text-3xl
+    text-lg
+    lg:mb-14
+    mb-8
+    lg:mt-0
+    mt-2
     text-secondary
     font-bold
 }
@@ -23,6 +27,8 @@
     flex
     gap-9
     w-full
+    flex-col
+    lg:flex-row
 }
 
 .news .highlight-card img{
@@ -68,15 +74,19 @@
     mb-12
     font-bold
     text-sm
+    hidden
+    lg:block
 }
 
 .news .grid-list {
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
     @apply
     grid
-    grid-cols-4
-    gap-5
+    gap-8
     h-auto
-    gap-x-5
+    gap-x-12
+    lg:mt-0
+    mt-8
 }
 
 .news .highlight-card .content button:hover {

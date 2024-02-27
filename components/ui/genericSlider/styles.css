@@ -1,0 +1,14 @@
+.slider-wrapper{
+    @apply
+    relative w-full h-full flex
+}
+
+.slider-container{
+    @apply
+    overflow-hidden
+}
+
+.slider-container .slider{
+    @apply
+    max-w-full
+}

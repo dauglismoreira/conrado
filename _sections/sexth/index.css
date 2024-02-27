@@ -3,13 +3,21 @@
     border-b
     border-gray
     w-full
-    pb-36
+    pb-20
+    lg:pb-36
+    pt-8
+    lg:pt-0
 }
 
 .subdivision .wrapper {
     @apply
-    mt-10
+    lg:mt-10
+    mt-8
     flex
+    flex-col
+    lg:flex-row
     w-full
     gap-3
+    px-4
+    items-center
 }

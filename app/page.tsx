@@ -1,6 +1,4 @@
 import "./index.css";
-import Header from "../components/ui/header";
-import Footer from "@/components/ui/footer";
 import Second from "../_sections/second";
 import Third from "../_sections/third";
 import Fourth from "../_sections/fourth";
@@ -14,7 +12,6 @@ import bgAsset from "@/assets/DETALHE-SIMBOOLO.png";
 export default function Home() {
     return (
         <main className="main-home" style={{backgroundImage: `url("${bgAsset.src}"`}}>
-            <Header/>
             <First/>
             <Second/>
             <Third/>
@@ -23,8 +20,6 @@ export default function Home() {
             <Sexth/>
             <Seventh/>
             <Eighth/>
-            <Footer/>
-
         </main>
     );
 }

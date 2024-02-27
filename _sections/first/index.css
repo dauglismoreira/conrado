@@ -1,7 +1,8 @@
 .cover {
     @apply
     w-full
-    h-[870px]
+    h-[520px]
+    lg:h-[870px]
     bg-no-repeat
     bg-top
     bg-cover
@@ -10,16 +11,23 @@
 
 .cover .title {
     @apply
-    absolute
-    left-56
-    top-52
+    absolute top-2/4 -translate-y-2/4 w-full lg:w-auto px-4 items-center flex flex-col
+    lg:items-start
+}
+
+.banner-container{
+    max-width:1420px;
+
+    @apply
+    mx-auto relative h-full justify-center flex lg:justify-start
 }
 
 .cover .title h1,
 .cover .title h3 {
     @apply
-    mb-14
-    text-primary
+    lg:mb-14
+    mb-8
+    text-primary text-center lg:text-left
 }
 
 .cover .title h3 {
@@ -30,9 +38,15 @@
 
 .cover .title h1 {
     @apply
-    text-5xl
+    text-3xl
+    lg:text-5xl
     font-bold
     max-w-72
+}
+
+.cover .title button{
+    @apply
+    w-full lg:w-auto
 }
 
 .cover .title button:hover{
@@ -48,7 +62,8 @@
     left-0
     top-0
     w-full
-    h-[870px]
+    h-[520px]
+    lg:h-[870px]
     bg-black
     opacity-20
 }

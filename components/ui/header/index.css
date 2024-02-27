@@ -9,7 +9,9 @@
     p-2
     sticky
     top-0
-    z-10
+    z-50
+    border-b
+    border-black
 }
 
 .header .container {
@@ -19,11 +21,15 @@
     flex
     justify-between
     h-full
+    relative
+    z-50
 }
 
 .header .container img {
     @apply
     cursor-pointer
+    relative
+    z-50
 }
 
 .header .container .ul {
@@ -60,6 +66,11 @@
     @apply
     flex
     text-center
+    items-center
+    gap-4
+    px-2
+    relative
+    z-50
 }
 
 .header .container .action-header button:last-child{
@@ -67,8 +78,43 @@
     ml-5
 }
 
-.header .container .action-header button:first-child:hover {
+.container .action-header button:first-child:hover {
     background-color: #FAAF1D;
     transition: .3s;
     color: black!important;
+}
+
+.header .container .action-header .desktop-available{
+    @apply
+    hidden lg:block
+}
+
+.header .container .ul.desktop-available{
+    @apply
+    hidden lg:flex
+}
+
+.header .toogle{
+    @apply
+    w-8 h-8 lg:hidden flex justify-around flex-col cursor-pointer
+}
+
+.header .toogle span{
+    @apply
+    h-0.5 bg-white w-full transition
+}
+
+.header .toogle.active span:nth-child(3){
+    @apply
+    opacity-0
+}
+
+.header .toogle.active span:nth-child(1){
+    @apply
+    rotate-45 mt-2
+}
+
+.header .toogle.active span:nth-child(2){
+    @apply
+    -rotate-45 -mt-3
 }
