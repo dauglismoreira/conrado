@@ -1,3 +1,4 @@
+import "./index.css";
 import Header from "../components/ui/header";
 import Footer from "@/components/ui/footer";
 import Second from "../_sections/second";
@@ -8,20 +9,22 @@ import Eighth from "../_sections/eighth";
 import First from "@/_sections/first";
 import Fiveth from "@/_sections/fiveth";
 import Seventh from "@/_sections/seventh";
+import bgAsset from "@/assets/DETALHE-SIMBOOLO.png";
 
 export default function Home() {
     return (
-        <main>
+        <main className="main-home" style={{backgroundImage: `url("${bgAsset.src}"`}}>
             <Header/>
-            <First />
-            <Second />
-            <Third />
-            <Fourth />
-            <Fiveth />
-            <Sexth />
-            <Seventh />
-            <Eighth />
+            <First/>
+            <Second/>
+            <Third/>
+            <Fourth/>
+            <Fiveth/>
+            <Sexth/>
+            <Seventh/>
+            <Eighth/>
             <Footer/>
+
         </main>
     );
 }

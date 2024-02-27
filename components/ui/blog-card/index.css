@@ -11,7 +11,9 @@
     @apply
     mb-5
     w-full
+    h-[182px]
     cursor-pointer
+    object-cover
 }
 
 .blog-card .wrapper {
@@ -30,7 +32,20 @@
     mb-3
 }
 
+.blog-card .wrapper .content h1 {
+    @apply
+    font-bold
+    text-base
+}
+
 .blog-card .wrapper button {
     @apply
     max-w-max
+}
+
+.blog-card .wrapper button:hover {
+    background-color: #FAAF1D!important;
+    color: black!important;
+    transition: .3s!important;
+    border: 1px solid #FAAF1D!important;
 }

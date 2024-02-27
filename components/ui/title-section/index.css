@@ -10,6 +10,7 @@
 .title-section h1{
     @apply
     text-lg
+    font-bold
 }
 
 .title-section h3{

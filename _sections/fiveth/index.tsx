@@ -22,7 +22,7 @@ export default function Fiveth(){
                     <ul>
                         <li><span><Image src={sizeIcon} alt="Suítes imagem"/></span> Lotes a partir de 200 m²</li>
                     </ul>
-                    <ButtonPrimary text="CONHEÇA" onClick={() => alert("")} classStyle="#323C3D" />
+                    <ButtonPrimary text="CONHEÇA" onClick={() => window.location.href = '/loteamentos/1'} classStyle="#323C3D" />
                 </div>
                 <Image src={building} alt="Foto empreendimento"/>
             </div>

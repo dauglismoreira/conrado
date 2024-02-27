@@ -9,7 +9,7 @@ export default function First(){
         <div className="title">
             <h3>LANÇAMENTO</h3>
             <h1>Residencial MontBlanc.</h1>
-            <ButtonPrimary text='CONHEÇA' onClick={() => ''} classStyle='#F1F2F4' />
+            <ButtonPrimary text='CONHEÇA' onClick={() => window.location.href = '/exclusivos/1'} classStyle='#F1F2F4' bgCol="unset"/>
         </div>
     </section>
 }

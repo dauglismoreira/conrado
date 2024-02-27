@@ -15,7 +15,7 @@
 .header .container {
     @apply
     w-full
-    max-w-1480
+    max-w-1420
     flex
     justify-between
     h-full
@@ -40,6 +40,20 @@
     text-primary
     items-center
     text-center
+    hover:text-third
+    hover:transition-all
+    duration-300
+    relative
+}
+
+.header .container .ul li a:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    left: 0;
+    background-color: #FAAF1D;
 }
 
 .header .container .action-header {
@@ -51,4 +65,10 @@
 .header .container .action-header button:last-child{
     @apply
     ml-5
+}
+
+.header .container .action-header button:first-child:hover {
+    background-color: #FAAF1D;
+    transition: .3s;
+    color: black!important;
 }

@@ -21,7 +21,7 @@ interface BuildingCard {
 export default function BuildingCard({image, city, address, title, link, rooms, parks, size, btn}: BuildingCard){
     return <div className="building-card">
         <span className="span-city">{city}</span>
-        <Image className="image-building" src={image} alt="Blog Imagem" onClick={() => alert("click")} />
+        <Image className="image-building" src={image} alt="Blog Imagem" onClick={() => window.location.href = link} />
         <div className="wrapper">
             <div className="content">
                 <h3>{address}</h3>
@@ -32,7 +32,7 @@ export default function BuildingCard({image, city, address, title, link, rooms, 
                     <span><Image src={sizeIcon} alt="Medidas ícone"/> {size}</span>
                 </div>
             </div>
-            <ButtonPrimary text={btn} onClick={() => alert("click")} classStyle='#5C635E' />
+            <ButtonPrimary text={btn} onClick={() => window.location.href = link} classStyle='#5C635E' />
         </div>
     </div>
 }

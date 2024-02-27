@@ -12,7 +12,7 @@
     @apply
     absolute
     left-56
-    top-44
+    top-52
 }
 
 .cover .title h1,
@@ -24,13 +24,22 @@
 
 .cover .title h3 {
     @apply
+    font-semibold
     text-xs
 }
 
 .cover .title h1 {
     @apply
-    text-4xl
+    text-5xl
+    font-bold
     max-w-72
+}
+
+.cover .title button:hover{
+    background-color: #FAAF1D!important;
+    border: #FAAF1D;
+    box-sizing: border-box;
+    color: black!important;
 }
 
 .cover .cover-degree {

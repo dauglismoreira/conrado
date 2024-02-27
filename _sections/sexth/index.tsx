@@ -8,25 +8,25 @@ import {placeholder} from "@/components/helpers/placeholder";
 export default function Sexth(){
     const subdivisionCard: any = [
         {
-            image: placeholder.positive,
+            image: placeholder.negative,
             address: "Laranjeiras do Sul - Paraná",
             title: "Loteamento Jabuticabal",
             size: "Lotes a partir de 200 m²",
-            link: ""
+            link: "/loteamentos/1"
         },
         {
-            image: placeholder.positive,
+            image: placeholder.negative,
             address: "Laranjeiras do Sul - Paraná",
             title: "Residencial Vista do Vale",
             size: "Lotes a partir de 200 m²",
-            link: ""
+            link: "/loteamentos/1"
         },
         {
-            image: placeholder.positive,
+            image: placeholder.negative,
             address: "Laranjeiras do Sul - Paraná",
             title: "Loteamento Jabuticabal",
             size: "Lotes a partir de 200 m²",
-            link: ""
+            link: "/loteamentos/1"
         },
     ];
 

@@ -8,7 +8,7 @@ const config = {
     extend: {
       maxWidth: {
         '1180': '1180px',
-        '1480': '1480px',
+        '1420': '1420px',
         '900': '900px'
       },
       colors: {

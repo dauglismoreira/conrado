@@ -14,7 +14,7 @@
 .header-single .container {
     @apply
     w-full
-    max-w-1480
+    max-w-1420
     flex
     h-full
 }

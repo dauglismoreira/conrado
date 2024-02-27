@@ -1,11 +1,12 @@
 .building-card {
     @apply
-    max-h-[667px]
     max-w-[482px]
     w-full
-    h-full
+    h-[678px]
     relative
     bg-white
+    border-2
+    border-gray
 }
 
 .building-card .span-city {
@@ -32,9 +33,8 @@
 
 .building-card .wrapper {
     @apply
-    border
-    border-gray
     p-5
+    bg-[#F1F2F4]
     flex
     flex-col
     mt-0
@@ -78,4 +78,18 @@
 .building-card .wrapper button {
     @apply
     max-w-max
+}
+
+.building-card:hover {
+    border: 1px solid #FAAF1D!important;
+    transition: .3s!important;
+    cursor: pointer!important;
+}
+
+.building-card:hover .wrapper button {
+    border: 1px solid #FAAF1D!important;
+    transition: .3s!important;
+    background-color: #FAAF1D!important;
+    color: black!important;
+    cursor: pointer!important;
 }

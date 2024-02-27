@@ -6,10 +6,14 @@ import Image from "next/image";
 import videoThumb from "../../assets/video 1.png";
 import right from "@/assets/right.svg";
 import ButtonPrimary from "@/components/ui/button-primary";
+import bgAsset from "../../assets/TEXTURA-FUNDO-PREDIO.png";
 
 export default function Contact() {
     return (
-        <main>
+        <main className="bg-[#F1F2F4]">
+            <div className="bg-asset">
+                <Image src={bgAsset} alt="" />
+            </div>
             <Header/>
             <div className="about">
                 <div className="container">

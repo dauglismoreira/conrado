@@ -1,14 +1,21 @@
 .subdivision-card {
     @apply
     flex
+    w-[465px]
     flex-col
+    border-[#CDCDCD]
+    border
+}
+
+.subdivision-card .image-card {
+    @apply
+    h-[248px]
+    object-cover
 }
 
 .subdivision-card .container {
     @apply
-    border-[#CDCDCD]
-    border
-    p-3
+    p-5
     mt-[-1px]
 }
 
@@ -47,4 +54,17 @@
 .subdivision-card .container button {
     @apply
     w-max
+}
+
+.subdivision-card:hover .container button {
+    background-color: #FAAF1D!important;
+    color: black!important;
+    transition: .3s!important;
+    border: 1px solid #FAAF1D!important;
+}
+
+.subdivision-card:hover {
+    border: 1px solid #FAAF1D!important;
+    transition: .3s!important;
+    cursor: pointer!important;
 }

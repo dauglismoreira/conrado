@@ -7,12 +7,12 @@
     align-middle
     self-center
     items-center
-    mb-20
+    mb-32
 }
 
 .main-container .container-max {
     @apply
-    max-w-1480
+    max-w-1420
     flex
     w-full
     flex-col

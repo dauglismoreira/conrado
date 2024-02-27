@@ -12,7 +12,7 @@
 .state-filter .container {
     @apply
     w-full
-    max-w-4xl
+    max-w-2xl
 }
 
 .state-filter .wrapper {

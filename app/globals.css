@@ -30,3 +30,9 @@ body::-webkit-scrollbar-thumb {
   outline: none;
 }
 
+textarea,
+select,
+option,
+input {
+  background-color: unset;
+}

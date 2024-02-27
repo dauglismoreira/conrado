@@ -81,7 +81,7 @@ export default function New() {
                     <div className="new-wrapper">
                         {
                             recommended.map((item: any, i: number) => (
-                                <BuildingCard key={`building-${i}`} image={imageTest} city="PORTO BELO" address="Porto Belo - Santa Catarina" title="Palazzo Reale" link="" rooms="2 ou 3 suítes" parks="2 vagas" size="90 a 125 m²" btn="CONHEÇA"/>
+                                <BuildingCard key={`building-${i}`} image={imageTest} city="PORTO BELO" address="Porto Belo - Santa Catarina" title="Palazzo Reale" link="/empreendimentos/1" rooms="2 ou 3 suítes" parks="2 vagas" size="90 a 125 m²" btn="CONHEÇA"/>
                             ))
                         }
                     </div>

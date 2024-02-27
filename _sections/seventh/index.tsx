@@ -12,7 +12,7 @@ export default function Seventh(){
             <TitleSection title="Conrado Empreendimentos" subtitle="" />
             <h1 className="history-title">Uma história edificada com confiança.</h1>
             <Image src={video} alt="Video thumbnail" />
-            <ButtonPrimary text="CONHEÇA A CONRADO" onClick={() => alert("click")} classStyle="#5C635E" />
+            <ButtonPrimary text="CONHEÇA A CONRADO" onClick={() => window.location.href = '/sobre'} classStyle="#5C635E" />
         </div>
     </Container>
 }

@@ -2,14 +2,14 @@
     @apply
     w-full
     pb-20
-    pl-40
-    pr-40
+    pl-36
+    pr-36
 }
 
-.last-news .wrapper {
+.last-news .wrapper-content {
     @apply
     mt-10
     flex
     w-full
-    gap-3
+    gap-5
 }

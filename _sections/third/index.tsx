@@ -9,11 +9,13 @@ import park from "../../assets/park.svg";
 import sizeIcon from "../../assets/size.svg";
 import lazer from "../../assets/lazer.svg";
 import ButtonPrimary from "@/components/ui/button-primary";
+import bgAsset from "@/assets/TEXTURA-FUNDO.svg";
 
 export default function Third(){
     return <Container>
         <div className="buildings">
-            <TitleSection title="Edifícios - Lançamentos" subtitle="Conheça os próximos empreendimentos da Conrado e escolha o seu." />
+            <TitleSection title="Edifícios - Lançamentos"
+                          subtitle="Conheça os próximos empreendimentos da Conrado e escolha o seu."/>
             <div className="wrapper">
                 <div className="content">
                     <h3>Porto Belo - Santa Catarina</h3>
@@ -29,7 +31,7 @@ export default function Third(){
                         <li><span><Image src={sizeIcon} alt="Suítes imagem"/></span> 90 a 125 m²</li>
                         <li><span><Image src={lazer} alt="Suítes imagem"/></span> Lazer no Rooftop</li>
                     </ul>
-                    <ButtonPrimary text="CONHEÇA" onClick={() => alert("")} classStyle="#323C3D" />
+                    <ButtonPrimary text="CONHEÇA" onClick={() => window.location.href = '/empreendimentos/1'} classStyle="#323C3D"/>
                 </div>
                 <Image src={building} alt="Foto empreendimento"/>
             </div>

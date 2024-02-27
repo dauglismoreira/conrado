@@ -1,8 +1,0 @@
-.grid-list {
-    @apply
-    mt-10
-    grid
-    grid-cols-3
-    gap-3
-    h-auto
-}

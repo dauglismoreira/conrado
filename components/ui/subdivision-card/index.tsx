@@ -14,12 +14,12 @@ interface SubdivisionCard {
 
 export default function SubdivisionCard({image, address, title, size, link}: SubdivisionCard){
     return <div className="subdivision-card">
-        <Image src={image} alt="Blog Imagem" />
+        <Image className="image-card" src={image} alt="Blog Imagem" onClick={() => window.location.href = link}/>
         <div className="container">
             <h3>{address}</h3>
             <h1>{title}</h1>
             <p><Image src={sizeIcon} alt="Ícone tamanho" /> {size}</p>
-            <ButtonPrimary text="SAIBA MAIS" onClick={() => alert("click")} classStyle='#5C635E' />
+            <ButtonPrimary text="SAIBA MAIS" onClick={() => () => window.location.href = link} classStyle='#5C635E' />
         </div>
     </div>
 }

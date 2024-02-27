@@ -1,3 +1,15 @@
+.bg-asset {
+    @apply
+    absolute
+    right-[-460px]
+    top-10
+}
+
+.bg-asset img {
+    @apply
+    w-[1628px]
+}
+
 .about {
     @apply
     w-full
@@ -7,8 +19,8 @@
 
 .about .container {
     @apply
-    pt-14
-    max-w-1180
+    pt-16
+    max-w-[1383px]
     w-full
     pl-32
     relative
@@ -16,21 +28,24 @@
 
 .about .container .container-content{
     @apply
-    max-w-[700px]
+    max-w-[882px]
 }
 
 .about .container .wrapp-info {
     @apply
     absolute
-    right-0
-    top-[430px]
+    right-[-50px]
+    top-[523px]
 }
 
 .about .container .wrapp-info h3 {
     @apply
     border-b-2
     border-third
-    mb-3
+    mb-6
+    font-bold
+    text-2xl
+    text-secondary-light
     max-w-max
 }
 
@@ -53,6 +68,7 @@
     text-6xl
     max-w-3xl
     mb-14
+    font-bold
 }
 
 .about .container .container-content .about-title p {
