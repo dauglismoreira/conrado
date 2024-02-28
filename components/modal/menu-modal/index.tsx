@@ -7,9 +7,10 @@ import Link from 'next/link';
 
 interface MenuModal {
     open: boolean,
+    onClose:() => void;
 }
 
-export default function MenuModal({open}: MenuModal){
+export default function MenuModal({open, onClose}: MenuModal){
 
     return <>
             <div className={`menu-modal ${open ? 'active' : ''}`}>
@@ -20,11 +21,11 @@ export default function MenuModal({open}: MenuModal){
                         <path d="M10.4162 46.88C8.8194 46.88 7.51794 45.5786 7.51794 43.9817V31.1657C7.51794 29.5642 8.8194 28.2628 10.4162 28.2628H39.2236C40.8204 28.2628 42.1218 29.5642 42.1218 31.1657V43.9817C42.1218 45.5786 40.8204 46.88 39.2236 46.88H10.4162ZM10.4162 30.9072C10.2731 30.9072 10.1578 31.0226 10.1578 31.1657V43.9817C10.1578 44.1248 10.2731 44.2402 10.4162 44.2402H39.2236C39.3666 44.2402 39.482 44.1248 39.482 43.9817V31.1657C39.482 31.0226 39.3666 30.9072 39.2236 30.9072H10.4162Z" fill="#F1F2F4"/>
                     </svg>
                     <ul className="ul mobile-available">
-                        <li><a href="/empreendimentos">Edifícios</a></li>
-                        <li><a href="/loteamentos">Loteamentos</a></li>
-                        <li><a href="/exclusivos">Excluisivos</a></li>
-                        <li><a href="/sobre">A Conrado</a></li>
-                        <li><a href="/noticias">Notícias</a></li>
+                        <li onClick={onClose}><Link href="/empreendimentos">Edifícios</Link></li>
+                        <li onClick={onClose}><Link href="/loteamentos">Loteamentos</Link></li>
+                        <li onClick={onClose}><Link href="/exclusivos">Exclusivos</Link></li>
+                        <li onClick={onClose}><Link href="/sobre">A Conrado</Link></li>
+                        <li onClick={onClose}><Link href="/noticias">Notícias</Link></li>
                     </ul>
                     <div className="social-mobile-container">
                         <div className="social-links">

@@ -3,6 +3,8 @@
     absolute
     right-[-460px]
     top-10
+    hidden
+    lg:block
 }
 
 .bg-asset img {
@@ -66,7 +68,8 @@
     lg:mt-14
     mt-8
     max-w-[880px]
-    pb-32
+    lg:pb-32
+    pb-8
 }
 
 .about .container .container-content .about-title h3 {
@@ -193,80 +196,4 @@
     text-2xl
     w-full
     font-bold
-}
-
-.about .message-contact {
-    @apply
-    flex
-    flex-col
-}
-
-.about .message-contact .wrapper .input-line textarea {
-    @apply
-    w-full
-    outline-0
-}
-
-.about .message-contact .message-contact-grid {
-    @apply
-    pt-6
-    lg:grid
-    lg:grid-cols-2
-    w-full
-    gap-5
-}
-
-.about .message-contact .wrapper {
-    @apply
-    w-full
-}
-
-.about .message-contact .wrapper .input-line {
-    @apply
-    mb-10
-}
-
-.about .message-contact .wrapper input {
-    @apply
-    w-full
-    border-b-2
-    outline-0
-    border-secondary-light
-    p-1
-}
-
-
-.about .message-contact .wrapper .input-line legend {
-    @apply
-    text-sm
-    text-secondary-light
-}
-
-.about .message-send {
-    @apply
-    flex
-    justify-between
-    gap-8
-    border-t-2
-    border-secondary-light
-    pt-10
-    flex-col
-    lg:flex-row
-}
-
-.about .message-send .right-container{
-    @apply
-    flex gap-4 items-start
-}
-
-.about .message-send img {
-    @apply
-    flex
-    self-start
-}
-
-.about .message-send label{
-    @apply
-    text-xs
-    text-secondary-light
 }

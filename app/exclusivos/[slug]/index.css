@@ -1,21 +1,29 @@
 .single-cover{
     @apply
-    h-[587px]
+    h-[520px]
+    lg:h-[587px]
     w-full
+    bg-center
+    bg-cover
 }
 
 .enterprise-content {
     @apply
     w-full
     flex
-    justify-start
+    flex-col-reverse
+    lg:flex-row
+    justify-between
+    gap-8
+    relative
 }
 
 .enterprise-content .content {
     @apply
     w-full
-    max-w-[60%]
-    pt-20
+    lg:max-w-[60%]
+    lg:pt-20
+    pt-12
     pb-16
 }
 
@@ -36,7 +44,10 @@
 .enterprise-content .content .wrapper {
     @apply
     flex
-    items-center
+    lg:items-center
+    items-start
+    flex-col
+    lg:flex-row
     gap-7
     w-full
 }
@@ -55,10 +66,16 @@
     text-secondary-light
 }
 
+.enterprise-content .side-bar{
+    @apply
+    relative w-full h-full max-w-[39.5%]
+    hidden
+    lg:block
+}
+
 .enterprise-content .fixed-content {
     @apply
     bg-secondary
-    ml-5
     p-10
     flex
     flex-col
@@ -66,9 +83,8 @@
     align-middle
     items-center
     mt-16
-    absolute
-    right-48
-    z-[-99]
+    relative
+    z-10
 }
 
 .enterprise-content .fixed-content .content-title {
@@ -131,10 +147,12 @@
     border-b
     border-t
     border-gray
-    mb-10
+    mb-12
     mt-10
-    pb-16
+    pb-12
     pt-16
+    px-4
+    lg:px-0
 }
 
 .enterprise-content .content .about-content h3 {
@@ -160,7 +178,10 @@
     border-b
     border-gray
     mb-16
-    pb-16
+    pb-12
+    pt-4
+    px-4
+    lg:px-0
 }
 
 .enterprise-content .content .enterprise-info h3 {
@@ -171,34 +192,44 @@
 }
 
 .enterprise-content .content .enterprise-info .wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     @apply
     grid
-    grid-cols-2
     gap-x-4
+    gap-y-0
+    lg:gap-y-1
 }
 
-.enterprise-content .content .enterprise-info .wrapper .col {
+
+.enterprise-content .content .enterprise-info .wrapper p {
     @apply
-    flex
-    flex-col
+    text-secondary-light flex mb-2
 }
 
-.enterprise-content .content .enterprise-info .wrapper .col p {
-    @apply
-    text-secondary-light
-}
-
-.enterprise-content .content .enterprise-info .wrapper .col p span{
+.enterprise-content .content .enterprise-info .wrapper p span{
     @apply
     text-third
     mr-3
     text-base
 }
 
-.enterprise-content .content .enterprise-info .btn-actions {
+.enterprise-gallery{
+    @apply
+    lg:pl-0
+    pl-4
+}
+
+.enterprise-gallery#PLANTAS{
+    @apply
+    pr-4
+}
+
+.enterprise-content .content .enterprise-gallery .btn-actions {
     @apply
     flex
     gap-5
+    py-8
+    overflow-auto
 }
 
 .enterprise-content .content .enterprise-info .wrapper {
@@ -393,6 +424,11 @@
     @apply
     w-full
     bg-secondary
+    relative
+    z-20
+    pb-12
+    px-4
+    lg:px-0
 }
 
 .recommended-buildings div .content-build {
@@ -407,6 +443,8 @@
     text-xl
     font-bold
     mb-16
+    text-center
+    lg:text-left
 }
 
 
@@ -414,11 +452,96 @@
     @apply
     w-full
     flex
-    h-[667px]
+    flex-col
+    lg:flex-row
+    /* h-[667px] */
     gap-3
 }
 
 .recommended-buildings .main-container {
     @apply
     mb-0
+}
+
+.gallery-button{
+    @apply
+    border-secondary text-secondary hover:bg-third hover:border-third whitespace-nowrap
+}
+
+.gallery-button.active{
+    @apply
+    bg-third border-third
+}
+
+.enterprise-info .carousel-container{
+    @apply
+    relative w-full
+}
+
+#PLANTAS{
+    @apply
+    mt-12
+}
+
+.enterprise-video, .enterprise-local, .enterprise-progress, .enterprise-contact{
+    @apply
+    border-t border-gray mt-20 px-4 lg:px-0
+}
+
+.enterprise-video h3, .enterprise-local h3, .enterprise-progress h3, .enterprise-contact h3{
+    @apply
+    py-16
+}
+
+.enterprise-video .content-video img{
+    @apply
+    h-[494px] object-cover
+}
+
+.enterprise-local .local-wrapper{
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    @apply
+    grid
+    gap-x-4
+    gap-y-1
+}
+
+.enterprise-content .enterprise-local .local-wrapper p {
+    @apply
+    text-secondary-light flex text-sm
+}
+
+.enterprise-content .enterprise-local .local-wrapper p span{
+    @apply
+    text-third
+    mr-3
+}
+
+.enterprise-content .enterprise-local .content-map img{
+    @apply
+    h-[494px] object-cover
+}
+
+.enterprise-progress .wrapper-graph{
+    @apply
+    flex gap-8 items-center flex-wrap flex-col lg:flex-row
+}
+
+.enterprise-progress .wrapper-graph .graph{
+    flex:1;
+    @apply
+    p-12
+}
+
+.enterprise-progress .wrapper-graph .graph-content{
+    flex:3;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    @apply
+    flex lg:grid gap-x-4 flex-col lg:w-auto w-full
+}
+
+
+.enterprise-title{
+    @apply
+    lg:px-0 px-4
 }

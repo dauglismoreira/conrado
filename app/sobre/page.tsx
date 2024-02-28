@@ -2,9 +2,8 @@
 import './index.css'
 import Image from "next/image";
 import videoThumb from "../../assets/video 1.png";
-import right from "@/assets/right.svg";
-import ButtonPrimary from "@/components/ui/button-primary";
 import bgAsset from "../../assets/TEXTURA-FUNDO-PREDIO.png";
+import { ContactForm } from '@/components/ui/contact-form';
 
 export default function Contact() {
     return (
@@ -83,49 +82,10 @@ export default function Contact() {
                                     <span className="address-phone">(47) 99172-3454</span>
                                 </div>
                             </div>
-                            <div className="contact">
-                                <h1>Agora que você já conhece um pouco da história da Conrado, que tal fazermos parte da
-                                    sua?</h1>
-                                    <div className="message-contact">
-                                        <div className="message-contact-grid">
-                                            <div className="wrapper">
-                                                <div className="input-line">
-                                                    <legend>NOME</legend>
-                                                    <input type="text"/>
-                                                </div>
-                                                <div className="input-line">
-                                                    <legend>TELEFONE</legend>
-                                                    <input type="email"/>
-                                                </div>
-                                            </div>
-                                            <div className="wrapper">
-                                                <div className="input-line">
-                                                    <legend>EMAIL</legend>
-                                                    <input type="text"/>
-                                                </div>
-                                                <div className="input-line">
-                                                    <legend>CIDADE</legend>
-                                                    <input type="email"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="wrapper">
-                                            <div className="input-line">
-                                                <legend>MENSAGEM</legend>
-                                                <textarea name="" id="" rows={6}></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="message-send">
-                                        <div className="right-container">
-                                            <input name='accept' type="checkbox" id="accept" />
-                                            <label htmlFor='accept'>
-                                                A Conrado respeita sua privacidade e utiliza seus dados pessoais para contatá-lo por e-mail ou telefone aqui registrados. Para saber mais, acesse nossa Política de Privacidade. Ao clicar em "Enviar", você concorda em permitir que a Conrado armazene e processe os dados pessoais fornecidos por você para a finalidade informada.
-                                            </label>
-                                        </div>
-                                        <ButtonPrimary text="ENVIAR" onClick={() => alert("")} classStyle="#5C635E" />
-                                    </div>
-                            </div>
+                            <span className="text-lg lg:text-3xl font-bold mb-4 block">Agora que você já conhece um pouco da história da Conrado, que tal fazermos parte da
+                                sua?</span>
+                            <span className="text-secondary lg:mb-4 block">Preencha os dados e em breve um consultor especialista entrará em contato.</span>
+                            <ContactForm/>
                         </div>
                     </div>
                 </div>

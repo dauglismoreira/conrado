@@ -1,0 +1,73 @@
+.contact-form .message-contact {
+    @apply
+    flex
+    flex-col
+}
+
+.contact-form .message-contact .wrapper .input-line textarea {
+    @apply
+    w-full
+    outline-0
+}
+
+.contact-form .message-contact .message-contact-grid {
+    @apply
+    pt-6
+    w-full
+    gap-5
+}
+
+.contact-form .message-contact .wrapper {
+    @apply
+    w-full flex flex-col lg:flex-row
+}
+
+.contact-form .message-contact .wrapper .input-line {
+    @apply
+    mb-10 w-full
+}
+
+.contact-form .message-contact .wrapper input {
+    @apply
+    w-full
+    border-b-2
+    outline-0
+    border-secondary-light
+    p-1
+}
+
+
+.contact-form .message-contact .wrapper .input-line legend {
+    @apply
+    text-sm
+    text-secondary-light
+}
+
+.contact-form .message-send {
+    @apply
+    flex
+    justify-between
+    gap-8
+    border-t-2
+    border-secondary-light
+    pt-10
+    flex-col
+    lg:flex-row
+}
+
+.contact-form .message-send .right-container{
+    @apply
+    flex gap-4 items-start
+}
+
+.contact-form .message-send img {
+    @apply
+    flex
+    self-start
+}
+
+.contact-form .message-send label{
+    @apply
+    text-xs
+    text-secondary-light
+}

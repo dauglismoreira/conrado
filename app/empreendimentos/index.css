@@ -2,14 +2,22 @@
     @apply
     w-full
     pt-10
+    pb-20
 }
 
 .grid-list {
+    grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
     @apply
     mt-10
     grid
-    grid-cols-3
     gap-3
-    h-[1350px]
     w-full
+    px-4
+    lg:px-0
+}
+
+@media(max-width:520px){
+    .grid-list {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
 }

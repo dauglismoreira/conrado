@@ -1,0 +1,39 @@
+.enterprise-slider{
+    @apply
+    w-full
+}
+
+.enterprise-slider .enterprise-photo{
+    @apply
+    w-[232px] h-[232px] lg:w-[432px] lg:h-[432px] object-cover
+}
+
+.slider-navigation{
+    @apply
+    flex justify-between items-center w-full mt-2
+}
+
+.slider-navigation p{
+    @apply
+    text-sm lg:block hidden
+}
+
+.slider-navigation .arrows{
+    @apply
+    flex gap-4 lg:-mt-8 items-center
+}
+
+.slider-navigation .arrows button{
+    @apply
+    transition hover:scale-125 
+}
+
+.slider-navigation .arrows button svg{
+    @apply
+    fill-third w-8 h-8
+}
+
+.slider-navigation .arrows span{
+    @apply
+    text-secondary
+}

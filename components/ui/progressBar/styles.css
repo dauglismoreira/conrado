@@ -1,0 +1,30 @@
+.progress-container {
+    @apply
+    py-4
+}
+
+.progress-container .title{
+
+}
+
+.progress-container .progress-bar{
+    @apply
+    flex flex-row gap-4 items-center justify-between mt-2
+}
+
+
+.progress-container .progress {
+    @apply
+    w-full bg-secondary-light h-1 relative transition
+}
+
+.progress-container .value {
+
+}
+
+.progress-container .progress span{
+    content:'';
+
+    @apply
+    absolute left-0 top-0 h-1 bg-third transition
+}

@@ -9,15 +9,18 @@
     @apply
     w-full
     flex
+    flex-col
+    lg:flex-row
     justify-between
-    pt-10
+    lg:pt-10
     pb-10
     items-center
 }
 
 .title-filter .wrapper h1{
     @apply
-    text-2xl
+    lg:text-2xl
+    text-lg
     font-bold
 }
 
@@ -25,6 +28,14 @@
     @apply
     flex
     gap-5
+    flex-col
+    lg:flex-row
+    lg:w-auto
+    w-full
+    px-4
+    lg:px-0
+    mt-4
+    lg:mt-0
 }
 
 .title-filter .wrapper .filters select{
@@ -43,7 +54,10 @@
     @apply
     w-full
     flex
-    gap-7
+    gap-x-7
+    gap-y-2
+    flex-wrap
+    px-4
 }
 
 .title-filter .active-filters span{

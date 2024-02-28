@@ -19,7 +19,7 @@ export default function Header(){
             <ul className="ul desktop-available">
                 <li><a href="/empreendimentos">Edifícios</a></li>
                 <li><a href="/loteamentos">Loteamentos</a></li>
-                <li><a href="/exclusivos">Excluisivos</a></li>
+                <li><a href="/exclusivos">Exclusivos</a></li>
                 <li><a href="/sobre">A Conrado</a></li>
                 <li><a href="/noticias">Notícias</a></li>
             </ul>
@@ -34,7 +34,8 @@ export default function Header(){
             </div>
         </div>
     </header>
+    <div className="mt-16"></div>
     <SearchModal open={open} onClose={() => setOpen(false)}/>
-    <MenuModal open={openMenu}/>
+    <MenuModal open={openMenu} onClose={() => setMenuOpen(false)}/>
     </>
 }

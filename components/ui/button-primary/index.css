@@ -1,6 +1,6 @@
 .btn-primary {
     @apply
-    text-third
+    /* text-third */
     border-solid
     border
     p-2.5

@@ -7,8 +7,9 @@
     flex
     justify-center
     top-16
-    z-10
+    z-30
     fixed
+    overflow-auto
 }
 
 .header-single .container {
@@ -30,6 +31,7 @@
     text-white
     text-sm
     p-4
+    whitespace-nowrap
 }
 
 .header-single .container a:nth-child(8) {

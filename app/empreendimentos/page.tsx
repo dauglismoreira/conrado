@@ -1,6 +1,4 @@
 'use client';
-import Header from "@/components/ui/header";
-import Footer from "@/components/ui/footer";
 import './index.css'
 import Container from "@/components/ui/container";
 import TitleFilter from "@/components/ui/title-filter";
@@ -11,8 +9,7 @@ export default function BuildingsList() {
     const buildings = [1,2,3,4,5,6];
   return (
     <main className="bg-[#F1F2F4]">
-      <Header/>
-      <Container>
+      <Container  margin="mb-0">
           <div className="buildings-list">
             <TitleFilter title='Conheça nossos edifícios' />
             <div className="grid-list">
@@ -24,7 +21,6 @@ export default function BuildingsList() {
             </div>
           </div>
       </Container>
-      <Footer/>
     </main>
   );
 }
